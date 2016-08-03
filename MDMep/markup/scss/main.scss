@@ -1,0 +1,853 @@
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'widescreen': 1200px
+);
+
+// keywords
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media';
+@import 'vendors/normalize';
+
+@import 'base/variables';
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/forms';
+
+@import 'castom/header';
+@import 'castom/footer';
+@import 'castom/reset';
+
+@import 'fonts';
+
+
+/* Common site styles */
+body {
+		color:#333;
+		font:12px/15px 'Arimo', sans-serif;
+		background:#fff;
+}
+#wrapper {
+    background: #ededed;
+    overflow: hidden;
+    .row{
+        max-width: 1174px;
+        margin: 0 auto;
+    }
+    a{
+        color: #832536;
+    }
+}
+
+#main{
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/*------Programs & events (index.html)------*/
+.content{
+    width: 100%;
+    padding: 22px 0 34px;
+    overflow: hidden;
+    
+    @include media('<desktop'){
+        padding: 22px 5px 34px;
+    }
+    
+    @include media('<tablet'){
+        padding: 21px 11px;
+    }
+}
+#aside{
+    float: left;
+    position: relative;
+    width: 23%;
+    background: #ededed;
+    color: #666;
+    font: 18px/22px 'Arimo', sans-serif;
+    padding: 17px 15px 0 13px;
+    border-radius: 3px 3px 0 0;
+    
+    @include media('<desktop'){
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    @include media('<tablet'){
+        float: none;
+        width: 100%;
+        padding: 17px 15px 50px 13px;
+        margin: 0 0 20px;
+        border-radius: 6px;
+        box-shadow: 0px 3px 3px 0px rgba(191, 191, 191, 0.5);
+    }
+    
+    @include media('<phone'){
+        margin-bottom: 10px;
+        padding: 10px 9px 40px 9px;
+    }
+    
+    
+    
+    .list{
+        color: #666;
+        border-bottom: 1px solid #666;
+        
+        @include media('<tablet'){
+            text-align: center;
+        }
+        @include media('<phone'){
+            font-size: 14px;
+            line-height: 15px;
+        }
+        
+        h5{
+            line-height: 24px;
+            padding: 0 0 15px;
+            font-weight: bold;
+            color: #782030;
+            
+            @include media('<phone'){
+                padding: 0 0 5px;
+            }
+            
+        }
+        ul{
+            padding: 15px 0;
+            border-top: 2px solid #782030;
+            
+            @include media('<tablet'){
+                line-height: 15px;
+                margin: 0 0 13px;
+            }
+            @include media('<phone'){
+                padding: 5px 0;
+                margin: 0;
+            }
+            
+            li{
+                padding: 0 0 11px;
+                transition: all 0.3s ease;
+                
+                @include media('<tablet'){
+                    float: none;
+                    padding: 4px 10px;
+                }
+                @include media('<phone'){
+                    float: none;
+                }
+                
+                
+                &.active a{
+                    color:#000;
+                    font-weight: bold;
+                }
+                
+                a{
+                    color: #666;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+    
+    .news-list{
+        margin: 19px 0 0;
+        padding: 0 0 23px;
+        font-size: 14px;
+        line-height: 17px;
+        border-bottom: 1px solid #666;
+        overflow: hidden;
+        
+        @include media('<tablet'){
+            margin: 10px 0 0;
+            padding: 0 0 14px;
+            line-height: 15px;
+        }
+        @include media('<phone'){
+            margin: 5px 0 0;
+            padding: 5px 0;
+            line-height: 13px;
+
+        }
+        
+        
+        h5{
+            color: #000;
+            font-size: 18px;
+            line-height: 19px;
+            font-weight: bold;
+            margin: 0 0 19px;
+            
+            @include media('<desktop'){
+                font-size: 16px;
+            }
+            
+            @include media('<tablet'){
+                display: inline-block;
+                vertical-align: top;
+                font-size: 15px;
+                line-height: 16px;
+                margin: 0 0 13px;
+            }
+            @include media('<phone'){
+                font-size: 14px;
+                line-height: 16px;
+                margin: 0px 0 5px;
+            }
+        }
+        
+        img{
+            display: block;
+            margin: 0 auto 15px;
+            width: 75%;
+            height: auto;
+            
+            @include media('<desktop'){
+                width: 65%;
+            }
+            
+            @include media('<tablet'){
+                width: 30%;
+                margin: 0 15px;
+                float: left;
+            }
+            
+        }
+        
+        a{
+            color: #363636;
+            transition: all 0.3s ease;
+                
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        
+        .news{
+            background: #fff;
+            padding: 15px 9px 22px;
+            border-radius: 6px;
+            box-shadow: 0px 3px 0px 0px rgba(191, 191, 191, 0.5);
+            
+            @include media('<phone'){
+                padding: 15px 9px 15px;
+            }
+            
+            img{
+                display: block;
+                margin: 0 auto 15px;
+                
+                @include media('<tablet'){
+                    margin: 0 12px;
+                }
+            }
+        }
+    }
+    .btn{
+        background: #832536;
+        color: #fff;
+        border: none;
+        font: 14px/15px 'Michroma', sans-serif;
+        padding: 13px;
+        margin: 15px 0 0;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        
+        @include media('<desktop'){
+            padding: 5px;
+        }
+        
+        @include media('<tablet'){
+            position: absolute;
+            left: 37%;
+            line-height: 15px;
+        }
+        @include media('<phone'){
+            left: 11%;
+            line-height: 14px;
+            margin: 10px 0 0;
+        }
+        
+        
+        &:hover{
+            opacity: 0.9;
+            box-shadow: 4px 4px 0px 0px rgba(191, 191, 191, 0.9);
+        }
+    }
+}
+.container{
+    font-family: 'Michroma', sans-serif;
+    border-top: 10px solid #832536;
+    box-shadow: 0px 3px 0px 0px rgba(191, 191, 191, 0.5);
+    border-radius: 4px;
+    width: 76%;
+    float: right;
+    background: #fff;
+    position: relative;
+    
+    @include media('<tablet'){
+        float: none;
+        width: 100%;
+    }
+    
+    
+    h1{
+        font-size: 30px;
+        line-height: 31px;
+        position: relative;
+        text-transform: uppercase;
+        color: #832536;
+        top: 28px;
+        z-index: 1;
+        
+        @include media('<desktop'){
+            font-size: 25px;
+            line-height: 30px;
+        }
+        
+        @include media('<tablet'){
+            top: 30px;
+            font-size: 23px;
+            line-height: 26px;
+        }
+        
+        @include media('<phone'){
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 21px;
+        }
+        
+        span{
+            background: #fff;
+            padding: 0 13px;
+            margin: 0 0 0 19px;
+            
+            @include media('<phone'){
+                margin: 0 0 0 10px;
+                padding: 0 5px;
+            }
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            top: 18px;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            border-top: 1px solid #832536;
+            
+            @include media('<tablet'){
+                top: 16px;
+            }
+        }
+    }
+    .border-block{
+        position: relative;
+        
+    }
+    .post-list{
+        padding: 27px 32px;
+        
+        @include media('<phone'){
+            padding: 15px 15px;
+        }
+        
+        span{
+            font-size: 30px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: #daab35;
+            
+            @include media('<desktop'){
+                font-size: 21px;
+                line-height: 26px;
+            }
+            
+            @include media('<phone'){
+                font-size: 14px;
+                line-height: 15px;
+            }
+        }
+        .post{
+            padding: 20px 30px 15px 0;
+            font: 15px/21px 'Arimo', sans-serif;
+            border-bottom: 1px solid #c6c6c6;
+            
+            @include media('<tablet'){
+                padding: 16px 30px 15px 0;
+                font-size: 14px;
+                line-height: 18px;
+            }
+            @include media('<phone'){
+                padding: 9px 0px 9px 0;
+                font-size: 14px;
+                line-height: 15px;
+            }
+            
+            &:last-child{
+                border: none;
+            }
+            
+            h3{
+                font: 22px/29px 'Michroma', sans-serif;
+                font-weight: bold;
+                margin: 0 0 28px;
+                
+                @include media('<desktop'){
+                    font-size: 19px;
+                    line-height: 24px;
+                }
+                
+                @include media('<tablet'){
+                    font-size: 18px;
+                    line-height: 23px;
+                    margin: 0 0 23px;
+                }
+                @include media('<phone'){
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin: 0px 0 5px;
+                }
+                
+                a{
+                    color: #832536;
+                    transition: all 0.3s ease;
+                    
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                    
+                }
+            }
+            .datatime{
+                font-size: 17px;
+                line-height: 24px;
+                font-weight: bold;
+                overflow: hidden;
+                margin: 0 0 21px;
+                
+                @include media('<desktop'){
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+                
+                @include media('<tablet'){
+                    font-size: 14px;
+                    line-height: 18px;
+                    margin: 0 0 11px;
+                }
+                @include media('<phone'){
+                    font-size: 14px;
+                    margin: 0 0 5px;
+                }
+                
+                time, p{
+                    float: left;
+                    padding-left: 50px;
+                    position: relative;
+                    
+                    @include media('<desktop'){
+                        padding-left: 35px;
+                    }
+                    
+                    @include media('<phone'){
+                        padding: 0 10px 2px 0;
+                    }
+                    
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 2em;
+                        height: 1px;
+                        background: #c6c6c6;
+                        left: 9px;
+                        bottom: 12px;
+                        
+                        @include media('<desktop'){
+                            width: 1em;
+                        }
+                        
+                        @include media('<phone'){
+                            display: none;
+                        }
+                    }
+                    
+                    &:first-child{
+                        padding: 0;
+                        
+                        @include media('<phone'){
+                            padding: 0 10px 0 0;
+                        }
+                        
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------Contact------*/
+
+h1{
+    font: 30px/30px'Michroma', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    color: #832536;
+    top: 50%;
+    margin: 0 0 20px;
+    z-index: 1;
+    
+    @include media('<desktop'){
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    @include media('<phone'){
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 21px;
+    }
+
+    span{
+        background: #fff;
+        display: inline-block;
+        padding: 0 13px;
+        margin: 0 0 0 19px;
+
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        top: 17px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        border-top: 1px solid #832536;
+    }
+}
+.contacts{
+    width: 100%;
+}
+.two-column{
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    font: 14px/21px 'Arimo', sans-serif;
+    margin: 0 auto;
+    letter-spacing: -4px;
+    
+    @include media('<desktop'){
+    }
+    
+    @include media('<phone'){
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    
+    .section{
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 27px 32px;
+        letter-spacing: 0;
+        
+        @include media('<tablet'){
+            width: 100%;
+            padding: 27px 13px 27px 32px;
+        }
+        @include media('<phone'){
+            padding: 20px 10px;
+        }
+        
+        strong{
+            font-size: 17px;
+            line-height: 18px;
+            font-weight: bold;
+            margin: 0 0 28px;
+            display: inline-block;
+            
+            @include media('<phone'){
+                font-size: 14px;
+                line-height: 16px;
+
+            }
+            
+        }
+        .form-contact{
+            padding: 20px 0;
+            position: relative;
+        }
+        .holder{
+            width: 100%;
+            letter-spacing: 0.36em;
+        }
+        .area-width{
+            width: 98%;
+            letter-spacing: 0;
+            margin: 0px 0 18px;
+            
+            @include media('<tablet'){
+                width: 97.5%;
+            }
+            
+            @include media ('<phone'){
+                width: 98.5%;
+            }
+            
+        }
+        .area{
+            width: 48%;
+            display: inline-block;
+            vertical-align: top;
+            letter-spacing: 0;
+            margin: 0px 0 18px;
+            
+            @include media('<phone'){
+                margin: 0px 0 10px;
+            }
+            
+            input{
+                padding: 8px;
+                width: 100%;
+                border: 1px solid #832536;
+                outline: none;
+                
+                @include media('<phone'){
+                    padding: 4px;
+                }
+            }
+            
+            
+        }
+        .input{
+            margin: 0px 0 18px;
+            @include media('<phone'){
+                margin: 0 0 10px;
+            }
+        }
+        input[id='address'],
+        input[id='city']{
+            width: 100%;
+            padding: 8px;
+            border-color: #832536;
+            outline: none;
+            
+            @include media('<phone'){
+                    padding: 4px;
+            }
+        }
+        .texterea{
+            margin: 0 0 32px;
+            
+            .text{
+                min-height: 118px;
+                width: 98%;
+                border-color: #832536;
+                outline: none;
+                
+                @include media('<tablet'){
+                width: 97.5%;
+                }
+
+                @include media ('<phone'){
+                    width: 98.5%;
+                }
+
+            }
+        }
+        .titel{
+            font-weight: bold;
+        }
+        ul{
+            margin: 20px 0 30px;
+            column-count: 3;
+            
+            @include media('<571px'){
+                column-count: 2;
+            }
+            
+            @include media('<phone'){
+                column-count: 1;
+            }
+            
+            li{
+                font-size: 11px;
+                line-height: 12px;
+                padding: 0 0 12px;
+                overflow: hidden;
+            
+                @include media('<phone'){
+                    font-size: 14px;
+                    line-height: 14px;
+                    
+                }
+                input[type='checkbox']{
+                    float: left;
+                    margin-right: 3px;
+                }
+            }
+        }
+        input[type='submit']{
+            margin-left: 7em;
+            font: 16px/16px 'Arimo', sans-serif;
+            background: #832536;
+            text-transform: uppercase;
+            color: #fff;
+            border: none;
+            width: 51%;
+            height: 39px;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            
+            @include media('<tablet'){
+                position: absolute;
+                margin: 0;
+                bottom: -4px;
+                left: 27%;
+                width: 40%;
+            }
+            @include media('<phone'){
+                bottom: 0;
+                font-size: 14px;
+                line-height: 14px;
+                height: 28px;
+            }
+            
+            &:hover{
+                border: 1px solid red;
+                opacity: .7;
+            }
+            
+        }
+    }
+    .map{
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        letter-spacing: 0;
+        letter-spacing: -4px;
+        
+        @include media('<desktop'){
+            padding: 0 0 0 30px;
+        }
+        @include media('<tablet'){
+            width: 100%;
+            margin: 0 0 25px;
+            padding: 0px 11px;
+            border-top: 1px solid #7f7f7f;
+            border-bottom: 1px solid #7f7f7f;
+        }
+        
+        .map-img{
+            display: inline-block;
+            letter-spacing: 0;
+            vertical-align: top;
+            padding: 30px 0;
+            width: 94%;
+            border-bottom: 1px solid #7f7f7f;
+            
+            @include media('<tablet'){
+                width: 100%;
+                border: none;
+            }
+            @include media('<713px'){
+            }
+            
+            
+            @include media('<phone'){
+                margin: 0 5px 0 0;
+
+            }
+            a{
+                letter-spacing: 0;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .address-info{
+        display: inline-block;
+        letter-spacing: 0;
+        vertical-align: top;
+        padding: 22px 0 0;
+        font-size: 17px;
+        line-height: 21px;
+        font-weight: bold;
+        overflow: hidden;
+        
+        @include media('<tablet'){
+            padding: 0;
+            width: 100%;
+        }
+        @include media('<phone'){
+            font-size: 14px;
+            line-height: 15px;
+        }
+        
+        
+        h3{
+            font: 22px/29px 'Michroma', sans-serif;
+            color: #832536;
+            
+            
+            @include media('<phone'){
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: bold;
+            }
+        }
+        .address{
+            width: 100%;
+            column-count: 2;
+            
+            a{
+                color: #2b2b2b !important;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    opacity: .7;
+                }
+            }
+            
+            @include media('<phone'){
+                font-size: 12px;
+                line-height: 15px;
+            }
+            
+            address{
+                
+                @include media('<tablet'){
+                     margin: 10px 0px;
+
+                }
+            }
+            
+        }
+    }
+}

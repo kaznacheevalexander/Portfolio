@@ -1,0 +1,171 @@
+.footer-group{
+    background: linear-gradient(to right, #e5d4ae 0%,#ecdec2 50%,#ecdec3 52%,#faf7ef 100%);
+    letter-spacing: -0.36em;
+    padding: 42px 0 24px;
+    font: 15px/20px 'museo_sans700';
+    border-bottom: 1px solid #fff;
+
+    @include media('<=tablet'){
+        padding: 34px 26px;
+    }
+    @include media('<tablet'){
+        display: none;
+    }
+    
+    .navigation{
+        letter-spacing: 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 31.2%;
+        margin-right: 46px;
+        @include media('<desktop'){
+            margin-right: 33px;
+            width: 37%;
+        }
+        ul{
+            column-count: 2;
+            li{
+                line-height: 16px;
+                padding: 0 0 8px;
+                page-break-inside: avoid;
+
+                a{
+                    text-decoration: none;
+                    color: #544c3f;
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+    .about-block{
+        letter-spacing: 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 28.3%;
+        margin-right: 80px;
+        line-height: 24px;
+        
+        .about-title{
+            text-transform: uppercase;
+            line-height: 16px;
+            padding: 0 0 4px;
+        }
+        
+        @include media('<desktop'){
+            margin-right: 27px;
+            width: 36%;
+        }
+    }
+    .product{
+        letter-spacing: 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+        text-transform: uppercase;
+        line-height: 17px;
+        
+        @include media('<desktop'){
+            width: 17%;
+        }
+        a{
+            text-decoration: none;
+            color: #544c3f;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+}
+.footer{
+    background: linear-gradient(to right, #d9d5ca 0%,#d7d3c8 1%,#d9d3c7 6%,#d8d2c6 7%,#d7d1c3 7%,#d6d0c0 13%,#d5ccbb 17%,#d7cbbb 21%,#d5c8b8 23%,#d7c6b4 32%,#d5c4b0 33%,#d5c5ae 37%,#d3c1ab 39%,#d4c2ac 41%,#d3c1a9 41%,#d2c0a8 44%,#d5c1a8 44%,#d5c1a8 45%,#d2bea6 47%,#d3bba1 53%,#d4bca2 56%,#d3b9a0 57%,#d1b69b 65%,#d3b599 65%,#d1b295 76%,#d0b192 76%,#cfb091 77%,#d1b091 80%,#d0af8e 80%,#d0ae8b 87%,#d0aa86 90%,#cfab87 93%,#cfa784 100%);
+    font: 15px/13px 'museo_sans500';
+    color: #524e45;
+
+    @include media('<=tablet'){
+        padding: 0 26px;
+    }
+    @include media('<tablet'){
+        background: linear-gradient(to right, rgba(218,215,206,1) 0%,rgba(217,213,204,1) 5%,rgba(213,209,200,1) 8%,rgba(209,205,196,1) 19%,rgba(206,202,193,1) 20%,rgba(203,199,190,1) 31%,rgba(198,193,187,1) 36%,rgba(196,191,185,1) 45%,rgba(192,187,181,1) 48%,rgba(191,187,178,1) 59%,rgba(188,184,175,1) 59%,rgba(186,182,173,1) 68%,rgba(183,179,170,1) 71%,rgba(184,179,173,1) 72%,rgba(181,177,168,1) 73%,rgba(182,177,171,1) 75%,rgba(183,176,168,1) 75%,rgba(181,176,170,1) 77%,rgba(181,174,166,1) 78%,rgba(179,174,168,1) 82%,rgba(175,170,164,1) 87%,rgba(176,171,165,1) 89%,rgba(175,170,164,1) 91%,rgba(173,168,162,1) 91%,rgba(173,168,162,1) 96%,rgba(170,165,159,1) 100%);
+    }
+    
+    a{
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    .copy{
+        float: left;
+        padding: 35px 0 0;
+        a{
+            color: #524e45;
+        }
+
+        @include media('<tablet'){
+            display: none;
+        }
+    }
+    .social{
+        float: right;
+        padding: 14px 0 12px;
+
+        @include media('<tablet'){
+            float: none;
+            text-align: center;
+        }
+        
+        .social-icon{
+            display: inline-block;
+            margin: 0 11px 0 0;
+            ul{
+                overflow: hidden;
+                li{
+                    float: left;
+                    margin: 0 0 0 3px;
+                    background: rgba(0, 0, 0, 0.6);
+                    border-radius: 5px;
+                    text-align: center;
+                    width: 47px;
+                    height: 47px;
+                    
+                    &:before{
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        height: 100%;
+                        width: 0px;
+                    }
+
+                    a{
+                        display: inline-block;
+                        vertical-align: middle;  
+                    }
+
+                    
+                    &:first-child{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .link{
+        display: inline-block;
+        ul{
+            overflow: hidden;
+            li{
+                float: left;
+                
+                &:first-child{
+                    padding: 8px 0 0;
+                }
+                .fa{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

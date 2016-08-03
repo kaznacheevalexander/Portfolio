@@ -1,0 +1,153 @@
+/* ---------------------------------------------------------
+   1. Embedded fonts styles
+   2. Common site styles
+   3. Styles for responsive breakpoints
+   ---------------------------------------------------------*/
+/* ---------------------------------------------------------
+   1. Embedded fonts styles
+   ---------------------------------------------------------*/
+@font-face { font-family: 'montserratregular'; src: url('../fonts/montserrat-regular-webfont.eot'); src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrat-regular-webfont.woff2') format('woff2'), url('../fonts/montserrat-regular-webfont.woff') format('woff'), url('../fonts/montserrat-regular-webfont.ttf') format('truetype'), url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+font-weight: normal;
+font-style: normal;}
+@font-face { font-family: 'open_sansregular'; src: url('../fonts/opensans-regular-webfont.eot'); src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff'), url('../fonts/opensans-regular-webfont.ttf') format('truetype'), url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+font-weight: normal;
+font-style: normal;}
+/* ---------------------------------------------------------
+   2. Сommon site styles
+   ---------------------------------------------------------*/
+/*- global site styles -*/
+#wrapper{ overflow: hidden; position: relative; width: 100%;}
+.fa-users, .fa-comments, .fa-trophy, .fa-star, .fa-plane, .fa-graduation-cap, .fa-graduation-cap{ color: #ff6e40; font-size: 50px !important;}
+.fa-external-link{ font-size: 26px !important; color: #fff; position: absolute; top: 30%; left: 30%;}
+.fa-users{ padding: 17px 12px 13px 15px;}
+.fa-comments{ padding: 11px 14px 19px 16px;}
+.fa-trophy{ padding: 15px 17px;}
+.fa-star{ padding: 15px 17px;}
+.fa-plane{ padding: 20px 20px 10px 21px;}
+.fa-graduation-cap{ padding: 15px 8px;}
+.fa-map-marker{ left: 38%;}
+.fa-phone{ left: 35%;}
+.fa-at{ left: 33%;}
+h2{ margin: 0; padding: 0 0 27px; font-family: 'montserratregular'; text-transform: uppercase; color: #000; font-weight: 500;}
+h3{ margin: 0; font-family: 'montserratregular'; font-weight: 400; text-transform: uppercase; color: #212121; padding: 0 0 5px;}
+.btn{ background: transparent; text-transform: uppercase; white-space: normal; border: 2px solid; font: 18px/20px 'montserratregular';}
+.btn-warning{ border-color: #ff5727; padding: 12px 35px 13px;}
+.btn-default:hover{ color: #fff !important; background-color: #000;}
+/*- header styles -*/
+.navbar{ border: none; margin-bottom: 0; padding: 6px 0 8px;}
+.navbar-brand{ padding: 20px 15px 0 2px;}
+.navbar-collapse{ overflow: hidden;}
+.nav{ text-transform: uppercase; font-family: 'montserratregular';}
+.navbar-nav > li{ padding: 17px 19px 0 3px;}
+/*- carousel style -*/
+.carousel { padding: 82px 0 0;}
+.carousel .fa{ font-size: 17px; color: #fff;}
+.carousel-control{ top: 50%; left: 30px; margin: -26px 0 0 0; width: 37px; height: 37px; border: 2px solid #ff6e40; padding: 2px 5px 2px 2px; background-image: none; opacity: 1;}
+.carousel-control.right{ left: auto; right: 30px; padding: 2px 2px 2px 5px; background-image: none;}
+.carousel-control.left{ background-image: none;}
+.carousel-control.right:hover,
+.carousel-control.left:hover{ background-color: #ff5727;}
+.carousel-caption{ position: static; padding: 23px 50px;}
+.carousel-inner > .item{ background-position: center; padding: 110px 0 138px;}
+.carousel-caption h1{ text-transform: uppercase; font-family: 'montserratregular'; margin-bottom: 23px;}
+.carousel-caption p{ font-size: 26px; line-height: 29px; margin: 0 0 37px;}
+/*- about-box sryle -*/
+.about-box{ padding: 98px 0 0; margin: 0 0 108px; text-align: center;}
+.above-title{ display: block; font-size: 16px; font-weight: normal; color: #bdbdbd; padding: 0 0 3px;}
+.about-box p{ margin: 0 0 22px;}
+.about-box .btn{ border-color: #212121; color: #212121; font-size: 15px; padding: 13px 44px;}
+.about-box.btn-default:hover{ background-color: #212121; color: #fff;}
+/*- service-box style -*/
+.service-box{ background-color: #f5f5f5; text-align: center; padding-top: 98px; padding-bottom: 65px;letter-spacing: -0.36em;}
+.service-box span{ letter-spacing: 0;}
+.service-box h2{ letter-spacing: 0;}
+.service-box .block{ display: inline-block; vertical-align: top; letter-spacing: 0; overflow: hidden; float: none; margin: 0 0 22px 0;}
+.service-box .block .icon-box{ text-align: center; float: left; background: url('../images/icon-border.png'); margin: 0 21px 0 0;}
+.service-box .block .box{ line-height: 20px; overflow: hidden; text-align: left;}
+/*- subscribe-box style -*/
+.subscribe-box{ background-color: #424242; padding: 42px 0 25px;}
+.subscribe-box .text-left .title{ color: #fff; font: 22px/26px 'montserratregular'; padding: 0 0 4px; display: block; text-transform: uppercase;}
+.subscribe-box .btn-warning{ font-size: 14px; line-height: 16px; padding: 14px 10px; width: 75%;}
+/*- imge-box style -*/
+.imge-box{ text-align: center; padding: 99px 0 0; margin: 0 0 78px; overflow: hidden;}
+.images{ margin: 0 0 20px; position: relative;}
+.images img{ width: 100%;}
+.info-box{ display: none; background: rgba(0, 0, 0, 0.3); position: absolute; top: 0; left: 10px; right: 10px; bottom: 0;}
+.images:hover .info-box{ display: block;}
+.info-box .info{ position: absolute; left: 0; right: 0; bottom: 0; background: #f4f4f4; padding: 25px 10px; color: #757575;}
+.info-box .ico{ position: absolute; top: 30%; left: 50%; margin:0 0 0 -30px; width: 60px; height: 60px; border-radius: 50%; background:#ff6e40;}
+.info-box .ico:hover{ background: #fff; border: 1px solid #ff6e40;}
+.info-box .ico:hover .fa{ color: #ff6e40;}
+.info-box .info .title{ color:#ff6e40; font-size: 18px; display: block;}
+.info-box .info p{ margin: 0;}
+/*- addres-block style -*/
+.contact-list{ overflow: hidden; text-align: left;}
+.contact-list h2{ padding: 0;}
+.addres-block{ padding: 40px 0 13px; background: #f5f5f5;}
+.addres-block .icon{ position: relative; float: left; width: 60px; height: 60px; border-radius: 50%; background:#ff6e40; margin: 0 15px 0 0;}
+.addres-block .fa{ position: absolute; font-size: 26px; color: #fff; top: 30%;}
+.address-info { overflow: hidden; padding: 10px 0 0; color: #616161;}
+.address-info address{ margin: 0;}
+.phone{ overflow: hidden; padding: 20px 0 0;}
+.email{ overflow: hidden; padding: 20px 0 0;}
+/*- map-marker style -*/
+.map-marker{ padding-top: 0;  overflow: hidden;}
+/*- back to top style -*/
+.back-to-top{ position: fixed; right: 20px; bottom: 64px; border: 2px solid #ff6e40;}
+.back-to-top a{ display: inline-block; padding: 7px 10px 7px; color: #ff6e40;}
+.back-to-top a:hover{ opacity: 1; background-color: #ff6e40;}
+.back-to-top a:hover .fa{ color: #fff;}
+.back-to-top .fa{ font-size: 18px;}
+/*- footer styles -*/
+#footer{ padding: 27px 0 10px; color: #757575; font-size: 14px; line-height: 17px;}
+#footer .fa{ font-size: 15px;}
+.footer-icon li{ padding: 0 10px;}
+.footer-nav li{ border-right: 2px solid #fc997f; padding: 0px 11px 0px 7px;}
+.footer-nav li:last-child{ border: none;}
+/* ---------------------------------------------------------
+   3. Styles for Responsive web design
+   ---------------------------------------------------------*/
+/*- styles for wide screens from 768px to 1024px -*/
+@media(max-width: 1024px){
+    /*- carousel style -*/
+  .carousel-caption h1{ margin-bottom: 0; font-size: 35px;}
+  .carousel-caption p{ margin: 0 0 6px;}
+  .contact-list{ margin: 0 0 15px}
+  .text-left,.text-right{ text-align: center;}
+  /*- subscribe-box style -*/
+  .subscribe-box .button{ text-align: center;}
+  .subscribe-box .contact-list-title{ text-align: center;}
+}
+/*- styles for wide screens from 320px to 768px -*/
+@media(max-width: 768px){
+    /*- header styles -*/
+  .navbar-nav > li > a{ padding: 0;}
+  .navbar-brand{ padding: 0 20px;}
+  .navbar-collapse{ border: none;}
+  .nav{ text-align: center;}
+  /*- carousel style -*/
+  .carousel{ padding: 65px 0 0;}
+  .carousel-caption h1{ font-size: 20px; margin:0 0 11px;}
+  .carousel-caption p{ font-size: 19px; line-height: 29px; margin: 0 0 10px;}
+  .carousel-caption .btn{ font-size: 16px; line-height: 18px; padding: 8px 20px;}
+  .carousel-control{ left: 10px;}
+  .carousel-control .right{ right: 10px;}
+  .carousel-inner > .item { height: 250px; padding: 20px 0 0;}
+  /*- about-box sryle -*/
+  .about-box{ margin: 0 0 20px; padding: 20px 0 0;}
+  /*- service-box style -*/
+  .service-box{ padding-bottom:20px;}
+  /* subscribe-box style*/
+  .subscribe-box{ padding: 42px 0 25px;}
+  /*- imge-box style -*/
+  .imge-box{ padding: 50px 0 0; margin: 0 0 20px;}
+  h2{ font-size: 25px;}
+  .info-box{ font-size: 14px; position: static; display: block;}
+  .info-box .info .title{ font-size: 14px;}
+  .info-box .info{ position: static;}
+  .info-box .ico{ top: 14%;}
+  /*- footer styles -*/
+  #footer .text-left, #footer .text-center, #footer .text-right{ text-align: center;}
+  #footer .text-right{ padding: 0;}
+  .contact-list{ margin: 0 0 15px;}
+}

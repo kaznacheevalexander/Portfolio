@@ -1,0 +1,377 @@
+#footer{
+    background: #000;
+    color: #fff;
+    font: 15px/21px 'Arimo', sans-serif;
+    padding: 39px 55px;
+    
+    @include media('<tablet'){
+        font-size: 13px;
+        line-height: 19px;
+    }
+    @include media('<phone'){
+        font-size: 11px;
+        line-height: 13px;
+    }
+    p{
+        overflow: hidden;
+        
+        @include media('<tablet'){
+            overflow: visible;
+        }
+    }
+    h3{    
+        font-size: 23px;
+        line-height: 24px;
+        color: #daab35;
+        margin: 0 0 25px;
+        
+        @include media('<tablet'){
+            font-size: 21px;
+            line-height: 17px;
+            margin: 0px 0 17px;
+        }
+        
+        @include media('<phone'){
+            font-size: 14px;
+            line-height: 15px;
+            margin: 0px 0 10px;
+        }
+    }
+    img{
+        float: left;
+        margin: 0 24px 0 0;
+    }
+    
+    .block{
+        overflow: hidden;
+        margin: 0 auto;
+        
+        @include media('<1025px'){
+            width: 100%;
+            padding: 39px 20px;
+        }
+        @include media('<phone'){
+            overflow: visible;
+            padding: 10px 20px;
+        }
+        
+        .about-info{
+            float: left;
+            width: 32%;
+            margin: 0 15px 0 0;
+            
+            @include media('<tablet'){
+                display: none;
+            }
+            
+        }
+        
+    }
+    #foot-nav{
+        float: left;
+        width: 26%;
+        position: relative;
+        margin-right: 10px;
+        
+        @include media('<tablet'){
+            width: 44%;
+        }
+        
+        @include media('<phone'){
+            width: 100%;
+            float: none;
+            
+            &:before{
+                content: '';
+                position: absolute;
+                bottom: -7px;
+                left: -9999px;
+                right: -9999px;
+                border: 1px solid #283346;
+            }
+        }
+        ul{
+            column-count: 2;
+            
+            li{
+                padding: 0px 0 18px;
+                line-height: 18px;
+                
+                @include media('<tablet'){
+                    padding: 0 0 15px;
+
+                }
+                
+                @include media('<phone'){
+                    font-size: 14px;
+                    line-height: 15px;
+                    padding: 0 0 5px;
+                }
+            }
+        }
+        
+        a{
+            color: #fff;
+            transition: all 0.2s ease;
+            
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+    .send{
+        float: right;
+        width: 38%;
+        
+        @include media('<tablet'){
+            width: 50%;
+        }
+        
+        @include media('<phone'){
+            padding: 10px 0;
+            float: none;
+            width: 100%;
+        }
+        img{
+            @include media('<desktop'){
+                width: 45%;
+            }
+            
+            @include media('<phone'){
+                margin: 1px 12px 0 0;
+
+            }
+        }
+        span{
+            font: 18px/19px 'Arimo', sans-serif;
+            color: #7f7f7f;
+            margin: 0 0 17px;
+            display: block;
+            
+            @include media('<tablet'){
+                font-size: 14px;
+                line-height: 15px;
+                margin: 0 0 10px;
+            }
+            @include media('<phone'){
+                margin: 0 0 7px;
+            }
+            
+            
+            a{
+                color: #fff;
+                transition: all 0.2s ease;
+                white-space: nowrap;
+                
+                &:hover{
+                    border-bottom: 2px solid #daab35;
+                }
+            }
+        }
+    }
+    .subscribe{
+        width: 100%;
+        padding: 1px;
+        background: #2b2b2b;
+        border: 1px solid #4f4f4f;
+        border-radius: 2px;
+        overflow: hidden;
+        margin: 0 0 20px;
+        
+        @include media('<tablet'){
+            margin: 0 0 14px;
+        }
+        @include media('<phone'){
+            margin: 0 0 8px;
+        }
+        
+        input[type="email"]{
+            background: #2b2b2b;
+            border: none;
+            outline: none;
+            width: 63%;
+            float: left;
+            height: 34px;
+            font-size: 15px;
+            line-height: 16px;
+            
+            @include media('<tablet'){
+                height: 30px;
+                font-size: 14px;
+                line-height: 15px;
+            }
+            @include media('<565px'){
+                width: 60%;
+                font-size: 13px;
+                line-height: 14px;
+                padding: 0.4em 0.3em;
+            }
+            @include media('<phone'){
+                height: 22px;
+
+            }
+        }
+        input[type="submit"]{
+            background: #832536;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            padding: 0 2px;
+            width: 37%;
+            float: right;
+            height: 34px;
+            font: 14px/15px 'Arimo', sans-serif;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            
+            @include media('<desktop'){
+                font-size: 12px;
+                line-height: 13px;
+            }
+            
+            @include media('<tablet'){
+                height: 30px;
+            }
+            @include media('<565px'){
+                width: 40%;
+                font-size: 11px;
+                line-height: 12px;
+            }
+            @include media('<phone'){
+                height: 22px;
+                font-size: 9px;
+                line-height: 10px;
+                padding: 0.4em;
+                
+
+            }
+            
+            &:hover{
+                border: 1px solid red;
+                opacity: .7;
+            }
+        }
+    }
+    .contacts{
+        font-size: 10px;
+        line-height: 36px;
+        margin: 0 auto;
+        padding: 15px 5px;
+        text-align: center;
+        position: relative;
+        
+        a{
+            color: #fff;
+            transition: all 0.2s ease;
+
+            &:hover{
+                opacity: .7;
+            }
+        }
+        
+        @include media('<tablet'){
+            width: 100%;
+            padding: 15px 5px 25px;
+        }
+        @include media('<713px'){
+            font-size: 8px;
+            line-height: 18px;
+        }
+        
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -9999px;
+            right: -9999px;
+            border: 1px solid #283346;
+        }
+        
+        strong{
+            float: left;
+            
+            @include media('<444px'){
+                display: none;
+            }
+            @include media('<841px'){
+                float: none;
+                display: inline-block;
+                vertical-align: top;
+            }
+            
+            
+        }
+        
+        .social{
+            overflow: hidden;
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+            margin: 0 5px;
+            
+            
+            li{
+                float: left;
+                padding: 0 10px;
+                            
+                
+                a{
+                    color: #fff;
+                    display: block;
+                    
+                    .fa{
+                        font-size: 20px;
+                        transition: all 0.2s ease;
+                
+                        &:hover{
+                            opacity: .7;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .contact{
+            float: right;
+            
+            @include media('<841px'){
+                float: none;
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+            }
+            
+            @include media('<554px'){
+                bottom: -14px;
+                left: 20%;
+                margin: 0px 0 12px 0;
+            }
+            
+            
+            li{
+                float: left;
+                padding-right: 14px;
+                
+                @include media('<phone'){
+                    padding-right: 6px;
+                }
+                
+                @include media('<841px'){
+                    float: none;
+                    display: inline-block;
+                }
+                
+                
+                a{
+                    color: #fff;
+                    transition: all 0.2s ease;
+                
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+
+}

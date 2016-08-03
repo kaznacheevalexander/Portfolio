@@ -1,0 +1,1741 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 78, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 99, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 119, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 163, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 170, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 174, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 368, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 422, D:/Верстка/Work/Minimo/markup/scss/vendors/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, D:/Верстка/Work/Minimo/markup/scss/vendors/_reset.scss */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, D:/Верстка/Work/Minimo/markup/scss/vendors/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, D:/Верстка/Work/Minimo/markup/scss/vendors/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 34, D:/Верстка/Work/Minimo/markup/scss/vendors/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 37, D:/Верстка/Work/Minimo/markup/scss/vendors/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 41, D:/Верстка/Work/Minimo/markup/scss/vendors/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, D:/Верстка/Work/Minimo/markup/scss/vendors/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 49, D:/Верстка/Work/Minimo/markup/scss/vendors/_reset.scss */
+a {
+  text-decoration: none; }
+
+/* line 10, D:/Верстка/Work/Minimo/markup/scss/base/_helpers.scss */
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* line 54, D:/Верстка/Work/Minimo/markup/scss/base/_helpers.scss */
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+/* line 1, D:/Верстка/Work/Minimo/markup/scss/base/_reset.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 4, D:/Верстка/Work/Minimo/markup/scss/base/_reset.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 8, D:/Верстка/Work/Minimo/markup/scss/base/_reset.scss */
+* {
+  max-height: 1000000px; }
+
+/* line 10, D:/Верстка/Work/Minimo/markup/scss/base/_reset.scss */
+body {
+  color: #333;
+  background: #fff;
+  font: 16px/1.2 "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 20, D:/Верстка/Work/Minimo/markup/scss/base/_reset.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 26, D:/Верстка/Work/Minimo/markup/scss/base/_reset.scss */
+.gm-style img {
+  max-width: none; }
+
+/* line 9, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: inherit;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+  color: inherit; }
+
+/* line 16, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+h1, .h1 {
+  font-size: 30px; }
+
+/* line 20, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+h2, .h2 {
+  font-size: 27px; }
+
+/* line 24, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+h3, .h3 {
+  font-size: 24px; }
+
+/* line 28, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+h4, .h4 {
+  font-size: 21px; }
+
+/* line 32, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+h5, .h5 {
+  font-size: 17px; }
+
+/* line 36, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+h6, .h6 {
+  font-size: 15px; }
+
+/* line 40, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+p {
+  margin: 0 0 1em; }
+
+/* line 44, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+a {
+  color: #39f; }
+  /* line 47, D:/Верстка/Work/Minimo/markup/scss/base/_typography.scss */
+  a:hover,
+  a:focus {
+    text-decoration: none; }
+
+/* line 4, D:/Верстка/Work/Minimo/markup/scss/base/_forms.scss */
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none; }
+
+/* line 17, D:/Верстка/Work/Minimo/markup/scss/base/_forms.scss */
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  padding: 0.4em 0.7em; }
+  /* line 28, D:/Верстка/Work/Minimo/markup/scss/base/_forms.scss */
+  input[type='text']:focus,
+  input[type='tel']:focus,
+  input[type='email']:focus,
+  input[type='search']:focus,
+  input[type='password']:focus,
+  textarea:focus {
+    border-color: #333; }
+  /* line 243, D:/Верстка/Work/Minimo/markup/scss/base/_mixins.scss */
+  input[type='text']::-webkit-input-placeholder,
+  input[type='tel']::-webkit-input-placeholder,
+  input[type='email']::-webkit-input-placeholder,
+  input[type='search']::-webkit-input-placeholder,
+  input[type='password']::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #999; }
+  /* line 244, D:/Верстка/Work/Minimo/markup/scss/base/_mixins.scss */
+  input[type='text']::-moz-placeholder,
+  input[type='tel']::-moz-placeholder,
+  input[type='email']::-moz-placeholder,
+  input[type='search']::-moz-placeholder,
+  input[type='password']::-moz-placeholder,
+  textarea::-moz-placeholder {
+    opacity: 1;
+    color: #999; }
+  /* line 245, D:/Верстка/Work/Minimo/markup/scss/base/_mixins.scss */
+  input[type='text']:-moz-placeholder,
+  input[type='tel']:-moz-placeholder,
+  input[type='email']:-moz-placeholder,
+  input[type='search']:-moz-placeholder,
+  input[type='password']:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: #999; }
+  /* line 246, D:/Верстка/Work/Minimo/markup/scss/base/_mixins.scss */
+  input[type='text']:-ms-input-placeholder,
+  input[type='tel']:-ms-input-placeholder,
+  input[type='email']:-ms-input-placeholder,
+  input[type='search']:-ms-input-placeholder,
+  input[type='password']:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #999; }
+  /* line 247, D:/Верстка/Work/Minimo/markup/scss/base/_mixins.scss */
+  input[type='text'].placeholder,
+  input[type='tel'].placeholder,
+  input[type='email'].placeholder,
+  input[type='search'].placeholder,
+  input[type='password'].placeholder,
+  textarea.placeholder {
+    color: #999; }
+
+/* line 37, D:/Верстка/Work/Minimo/markup/scss/base/_forms.scss */
+select {
+  -webkit-border-radius: 0; }
+
+/* line 41, D:/Верстка/Work/Minimo/markup/scss/base/_forms.scss */
+textarea {
+  resize: vertical;
+  vertical-align: top; }
+
+/* line 50, D:/Верстка/Work/Minimo/markup/scss/base/_forms.scss */
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  cursor: pointer; }
+
+/* line 1, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+#header {
+  padding: 70px 0 66px; }
+  /* line 4, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+  #header:before {
+    content: "";
+    clear: both;
+    display: block; }
+  @media (max-width: 768px) {
+    /* line 1, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+    #header {
+      padding: 15px 10px 0; } }
+  /* line 14, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+  #header .logo {
+    float: left; }
+    @media (max-width: 768px) {
+      /* line 14, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+      #header .logo {
+        margin: 5px 0 0; } }
+
+/* line 23, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+#nav {
+  float: right;
+  font-size: 14px;
+  line-height: 30px;
+  transition: opacity 0.3s linear 0s; }
+  @media (max-width: 768px) {
+    /* line 23, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+    #nav {
+      height: 0;
+      opacity: 0;
+      visibility: hidden; } }
+  /* line 37, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+  #nav ul:before {
+    content: "";
+    clear: both;
+    display: block; }
+  @media (max-width: 768px) {
+    /* line 36, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+    #nav ul {
+      display: block;
+      text-align: center;
+      position: absolute;
+      top: 55px;
+      background: #fff;
+      right: 0;
+      left: 0;
+      text-align: center; } }
+  /* line 54, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+  #nav ul li {
+    float: left;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 0 13px;
+    margin-left: 94px;
+    line-height: 16px; }
+    /* line 64, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+    #nav ul li:hover .drop {
+      display: block; }
+    /* line 68, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+    #nav ul li .drop {
+      display: none;
+      position: absolute;
+      top: 34px;
+      left: 0;
+      right: 0;
+      width: auto;
+      background: #fff;
+      padding: 13px 5px;
+      border: 1px solid #c8c6c6;
+      border-width: 0 1px 1px 1px;
+      box-shadow: 0px 8px 9px 1px rgba(160, 160, 160, 0.7);
+      transition: all 1s ease-in-out; }
+      @media (max-width: 1024px) {
+        /* line 68, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+        #nav ul li .drop {
+          left: 63px; } }
+      @media (max-width: 768px) {
+        /* line 68, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+        #nav ul li .drop {
+          position: relative;
+          overflow: hidden;
+          height: 105px;
+          font-size: 12px;
+          line-height: 14px;
+          padding: 0;
+          width: auto;
+          left: 0;
+          top: 0;
+          border: none;
+          box-shadow: none; } }
+      /* line 100, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+      #nav ul li .drop ul {
+        top: 0 !important; }
+      /* line 104, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+      #nav ul li .drop li {
+        float: none !important;
+        text-align: center !important;
+        padding: 15px 0 5px !important;
+        margin: 0; }
+    @media (max-width: 1024px) {
+      /* line 54, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+      #nav ul li {
+        margin: 5px 0 2px 70px; } }
+    @media (max-width: 768px) {
+      /* line 54, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+      #nav ul li {
+        margin: 10px;
+        display: block;
+        float: none; } }
+    /* line 124, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+    #nav ul li:first-child {
+      margin-left: 0; }
+      @media (max-width: 768px) {
+        /* line 124, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+        #nav ul li:first-child {
+          margin-left: 10px; } }
+    /* line 133, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+    #nav ul li a {
+      transition: all 0.2s ease-in-out;
+      color: #626262 !important; }
+      /* line 137, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+      #nav ul li a:hover {
+        opacity: .7; }
+
+/* line 147, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+.nav-bar .nav-opener {
+  display: none;
+  float: right;
+  width: 45px;
+  height: 35px;
+  position: relative;
+  border-radius: 3px;
+  text-indent: -9999px;
+  overflow: hidden; }
+  /* line 157, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+  .nav-bar .nav-opener:before, .nav-bar .nav-opener:after, .nav-bar .nav-opener span {
+    background: #626262;
+    border-radius: 4px;
+    position: absolute;
+    top: 16px;
+    left: 25%;
+    right: 25%;
+    height: 3px;
+    margin-top: -2px;
+    transition: all 0.2s linear; }
+  /* line 168, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+  .nav-bar .nav-opener:before {
+    content: '';
+    top: 10px; }
+  /* line 172, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+  .nav-bar .nav-opener:after {
+    content: '';
+    top: 10px;
+    top: 22px; }
+  @media (max-width: 768px) {
+    /* line 147, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+    .nav-bar .nav-opener {
+      display: block;
+      float: right; } }
+  /* line 182, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+  .nav-bar .nav-opener .material-icons {
+    font-size: 35px; }
+
+/* line 187, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+.close-btn span, .nav-active .nav-opener span {
+  opacity: 0; }
+
+/* line 190, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+.nav-opener:hover {
+  opacity: .9; }
+
+/* line 195, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+.close-btn:after, .close-btn:before {
+  transform: rotate(45deg);
+  top: 16px;
+  left: 15%;
+  right: 15%; }
+
+/* line 204, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+.nav-active .nav-opener:after, .nav-active .nav-opener:before {
+  transform: rotate(45deg);
+  top: 16px;
+  left: 15%;
+  right: 15%; }
+
+/* line 212, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+.close-btn:after, .nav-active .nav-opener:after {
+  transform: rotate(-45deg); }
+
+/* line 216, D:/Верстка/Work/Minimo/markup/scss/layout/_header.scss */
+.nav-active #nav {
+  height: auto;
+  opacity: 1;
+  visibility: visible; }
+
+/* line 1, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+#footer {
+  background: #f0f0f0;
+  padding: 29px 10px 34px; }
+  @media (max-width: 768px) {
+    /* line 1, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+    #footer {
+      padding: 20px 10px 15px; } }
+  /* line 8, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+  #footer .holder-foot {
+    padding: 0 0px 0 92px;
+    overflow: hidden;
+    max-width: 1080px;
+    margin: 0 auto; }
+    @media (max-width: 1024px) {
+      /* line 8, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+      #footer .holder-foot {
+        padding: 0 5px; } }
+  /* line 18, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+  #footer .bottom-nav {
+    float: left; }
+    @media (max-width: 479px) {
+      /* line 18, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+      #footer .bottom-nav {
+        float: none;
+        text-align: center; } }
+    /* line 26, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+    #footer .bottom-nav li {
+      padding: 5px 17px 5px 0;
+      float: left;
+      text-transform: none; }
+      @media (max-width: 479px) {
+        /* line 26, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+        #footer .bottom-nav li {
+          float: none; } }
+      /* line 34, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+      #footer .bottom-nav li a {
+        color: #000 !important;
+        transition: all 0.2s ease; }
+        /* line 38, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+        #footer .bottom-nav li a:hover {
+          opacity: .7; }
+
+/* line 48, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+.social {
+  float: right; }
+  @media (max-width: 479px) {
+    /* line 48, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+    .social {
+      float: none;
+      text-align: center; } }
+  /* line 56, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+  .social li {
+    float: left;
+    padding: 5px 24px 5px 0;
+    text-transform: none; }
+    @media (max-width: 479px) {
+      /* line 56, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+      .social li {
+        display: inline-block;
+        float: none; } }
+    /* line 66, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+    .social li:first-child {
+      padding: 5px 20px 5px 0; }
+    /* line 69, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+    .social li:last-child {
+      padding: 5px 0; }
+    /* line 73, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+    .social li a {
+      color: #000 !important;
+      transition: all 0.2s ease; }
+      /* line 77, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+      .social li a:hover {
+        color: #000 !important; }
+    /* line 83, D:/Верстка/Work/Minimo/markup/scss/layout/_footer.scss */
+    .social li .fa {
+      font-size: 17px;
+      line-height: 18px;
+      color: #626262 !important; }
+
+@font-face {
+  font-family: 'playfairdisplay';
+  src: url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Black.ttf") format("truetype"), url("../fonts/PlayfairDisplay-BlackItalic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype"), url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Italic.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/Ubuntu-Regular.ttf") format("truetype"), url("../fonts/Ubuntu-Bold.ttf") format("truetype"), url("../fonts/Ubuntu-BoldItalic.ttf") format("truetype"), url("../fonts/Ubuntu-Italic.ttf") format("truetype"), url("../fonts/Ubuntu-Light.ttf") format("truetype"), url("../fonts/Ubuntu-LightItalic.ttf") format("truetype"), url("../fonts/Ubuntu-Medium.ttf") format("truetype"), url("../fonts/Ubuntu-MediumItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?us1ew5");
+  src: url("../fonts/icomoon.eot?us1ew5#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?us1ew5") format("truetype"), url("../fonts/icomoon.woff?us1ew5") format("woff"), url("../fonts/icomoon.svg?us1ew5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 40, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 54, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+#wrapper {
+  background: #fff;
+  font: 14px/24px "playfairdisplay";
+  color: #626262; }
+  /* line 59, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #wrapper .row {
+    max-width: 1062px;
+    margin: 0 auto; }
+    @media (max-width: 1024px) {
+      /* line 59, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #wrapper .row {
+        padding: 0 10px; } }
+  /* line 68, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #wrapper .holder {
+    max-width: 900px;
+    margin: 0 auto 74px; }
+    @media (max-width: 768px) {
+      /* line 68, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #wrapper .holder {
+        margin: 0 auto 20px; } }
+  /* line 78, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #wrapper h2 {
+    letter-spacing: 0;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0 0 30px;
+    margin: 0;
+    font-weight: 400; }
+    @media (max-width: 768px) {
+      /* line 78, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #wrapper h2 {
+        padding: 0 0 20px; } }
+    @media (max-width: 768px) {
+      /* line 78, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #wrapper h2 {
+        font-size: 25px;
+        line-height: 29px; } }
+    /* line 94, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #wrapper h2 a {
+      color: #626262; }
+      /* line 96, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #wrapper h2 a:hover {
+        opacity: .7; }
+  /* line 101, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #wrapper h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    font-weight: 400; }
+    @media (max-width: 768px) {
+      /* line 101, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #wrapper h4 {
+        font-size: 18px;
+        line-height: 20px; } }
+    /* line 111, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #wrapper h4 a {
+      color: #626262; }
+      /* line 113, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #wrapper h4 a:hover {
+        opacity: .7; }
+  /* line 118, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #wrapper .link-bottom {
+    padding: 0 0 18px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'ubuntu';
+    transition: all 0.2s ease; }
+    /* line 126, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #wrapper .link-bottom a:hover {
+      opacity: .7; }
+  /* line 131, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #wrapper .link {
+    display: inline-block;
+    line-height: 18px;
+    padding: 0 0 18px;
+    font-family: 'ubuntu';
+    text-transform: uppercase;
+    margin: 0;
+    transition: all 0.2s ease; }
+    /* line 141, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #wrapper .link a:hover {
+      opacity: .7; }
+  /* line 147, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #wrapper a {
+    color: #b4ad9e; }
+
+/* line 152, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+#main {
+  margin: 0 0 141px; }
+  @media (max-width: 768px) {
+    /* line 152, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #main {
+      margin: 0 0 60px; } }
+
+/* line 160, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.background {
+  margin: 0 0 84px; }
+  @media (max-width: 768px) {
+    /* line 160, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .background {
+      margin: 0 0 35px; } }
+
+/* line 168, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.holder {
+  overflow: hidden; }
+  /* line 171, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .holder p {
+    margin: 0 0 42px; }
+    @media (max-width: 768px) {
+      /* line 171, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .holder p {
+        margin: 0 0 1em; } }
+  /* line 178, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .holder img {
+    margin: 0 auto 53px; }
+    @media (max-width: 768px) {
+      /* line 178, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .holder img {
+        margin: 0 auto 25px; } }
+  /* line 185, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .holder .text {
+    margin: 0 0 110px; }
+    @media (max-width: 768px) {
+      /* line 185, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .holder .text {
+        margin: 0 0 50px; } }
+    @media (max-width: 479px) {
+      /* line 185, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .holder .text {
+        margin: 0 0 20px; } }
+    /* line 196, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .holder .text p {
+      margin: 0 0 21px; }
+
+/* line 201, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.container {
+  letter-spacing: -4px;
+  margin: 0 0 0 -28px; }
+  @media (max-width: 883px) {
+    /* line 201, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .container {
+      padding: 0 0 0 13px; } }
+  @media (max-width: 768px) {
+    /* line 201, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .container {
+      padding: 0 5px; } }
+  @media (max-width: 669px) {
+    /* line 201, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .container {
+      margin: 0; } }
+  /* line 216, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .container .block {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    letter-spacing: 0px;
+    padding: 0 0 86px;
+    margin: 0 0 0 26px;
+    width: 47%;
+    transition: all 1s linear; }
+    /* line 227, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .container .block:nth-last-child(1) {
+      padding: 0 0 9px; }
+      @media (max-width: 768px) {
+        /* line 227, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        .container .block:nth-last-child(1) {
+          padding: 0 0 86px; } }
+    /* line 233, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .container .block:nth-last-child(2) {
+      padding: 0 0 9px; }
+      @media (max-width: 768px) {
+        /* line 233, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        .container .block:nth-last-child(2) {
+          padding: 0 0 86px; } }
+    @media (max-width: 883px) {
+      /* line 216, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .container .block {
+        width: 46%; } }
+    @media (max-width: 669px) {
+      /* line 216, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .container .block {
+        width: 45%;
+        margin: 0px 15px; } }
+    @media (max-width: 624px) {
+      /* line 216, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .container .block {
+        width: 44%; } }
+    @media (max-width: 525px) {
+      /* line 216, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .container .block {
+        width: 100%;
+        padding: 0 9px 20px;
+        margin: 0; } }
+    /* line 258, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .container .block img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 19px; }
+    /* line 269, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .container .block .list {
+      text-align: left;
+      padding: 0px 8px 0 0; }
+      @media (max-width: 768px) {
+        /* line 269, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        .container .block .list {
+          padding: 0px 8px 0 2px; } }
+      @media (max-width: 479px) {
+        /* line 269, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        .container .block .list {
+          padding: 0 10px 0 15px; } }
+
+/* line 283, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.image-box {
+  position: relative; }
+  /* line 286, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .image-box:hover .mask {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5); }
+
+/* line 291, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.info {
+  transform: scale(0, 0);
+  transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out;
+  color: #fff !important; }
+
+/* line 297, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.image-box:hover .info {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.3s; }
+
+/* line 302, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.image-box .mask {
+  content: '';
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 0 solid rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  opacity: 0;
+  overflow: visible;
+  transition: all 0.4s ease-in-out 0s; }
+
+/* line 318, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.material-icons {
+  position: absolute;
+  left: 46%;
+  top: 46%;
+  font-size: 37px !important; }
+
+/* line 325, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.forms {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 64px 0 74px;
+  width: 100%;
+  margin: 0 0 100px; }
+  @media (max-width: 768px) {
+    /* line 325, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .forms {
+      margin: 0 auto 40px;
+      padding: 40px 0; } }
+  /* line 336, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .forms h2 {
+    color: #333; }
+  /* line 340, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .forms .form-contact {
+    width: 400px;
+    padding: 38px 0 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+    color: #626262; }
+    @media (max-width: 768px) {
+      /* line 340, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .forms .form-contact {
+        width: 90%; } }
+    /* line 351, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .forms .form-contact input[type='email'] {
+      background: #f0f0f0;
+      border: none;
+      outline: none;
+      padding: 10px 0;
+      width: 88%; }
+    /* line 359, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .forms .form-contact .icon-submit {
+      background: none;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 0;
+      width: 10%;
+      transition: all 0.2s ease; }
+      /* line 369, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .forms .form-contact .icon-submit:before {
+        content: "\e907"; }
+      /* line 373, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .forms .form-contact .icon-submit:hover {
+        opacity: .7; }
+
+/* line 381, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.loadmore {
+  letter-spacing: -4px;
+  margin: 0 0 121px;
+  color: #626262; }
+  @media (max-width: 768px) {
+    /* line 381, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .loadmore {
+      margin-bottom: 40px; } }
+
+/* line 392, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.load-more {
+  background: #fff;
+  display: block;
+  outline: none;
+  border: 1px solid #000;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 18px 5px;
+  width: 164px;
+  transition: all 0.2s ease;
+  letter-spacing: 0; }
+  /* line 406, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .load-more:hover {
+    transform: skew(-10deg); }
+  @media (max-width: 479px) {
+    /* line 392, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .load-more {
+      font-size: 16px;
+      line-height: 18px;
+      padding: 10px 5px;
+      width: 120px; } }
+
+/* line 418, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.social-row {
+  float: right; }
+  @media (max-width: 768px) {
+    /* line 418, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-row {
+      text-align: right;
+      float: none;
+      margin: 0 0 30px; } }
+  @media (max-width: 479px) {
+    /* line 418, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-row {
+      text-align: center; } }
+  /* line 431, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .social-row li {
+    float: left;
+    padding: 5px 15px 5px 0; }
+    @media (max-width: 768px) {
+      /* line 431, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .social-row li {
+        float: none;
+        display: inline-block; } }
+    @media (max-width: 479px) {
+      /* line 431, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .social-row li {
+        display: inline-block;
+        float: none; } }
+    /* line 445, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-row li:first-child {
+      padding: 5px 22px 5px 0;
+      text-transform: uppercase;
+      font-family: 'ubuntu'; }
+    /* line 451, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-row li a:hover {
+      color: #000 !important; }
+    /* line 456, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-row li .fa {
+      font-size: 17px;
+      line-height: 18px; }
+
+/* line 462, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.more {
+  background: #f5f5f5;
+  margin: 0 0 57px; }
+  /* line 465, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .more .spacing {
+    letter-spacing: 0;
+    display: inline-block !important;
+    padding: 0 0 37px !important; }
+    @media (max-width: 1024px) {
+      /* line 465, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .more .spacing {
+        padding: 0 0 18px 11px !important; } }
+    @media (max-width: 768px) {
+      /* line 465, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .more .spacing {
+        padding: 0 0 40px 9px; } }
+  /* line 478, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .more .images {
+    max-width: 900px;
+    margin: 0 auto;
+    letter-spacing: -4px;
+    padding: 49px 0 96px; }
+    @media (max-width: 480px) {
+      /* line 478, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .more .images {
+        padding: 15px 0;
+        text-align: center; } }
+  /* line 490, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .more .image-box {
+    margin: 0 0 0 -20px; }
+    @media (max-width: 480px) {
+      /* line 490, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .more .image-box {
+        margin: 0; } }
+    /* line 496, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .more .image-box .block-more {
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+      letter-spacing: 0px;
+      padding: 0 0 0 20px; }
+      @media (max-width: 1024px) {
+        /* line 496, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        .more .image-box .block-more {
+          padding: 0 0 0 30px; } }
+      @media (max-width: 480px) {
+        /* line 496, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        .more .image-box .block-more {
+          padding: 0; } }
+      @media (max-width: 479px) {
+        /* line 496, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        .more .image-box .block-more {
+          width: 100%;
+          text-align: center;
+          margin: 0 0 30px; } }
+      /* line 517, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .more .image-box .block-more img {
+        width: auto;
+        height: auto;
+        margin: 0 auto 9px; }
+      /* line 523, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .more .image-box .block-more h4 {
+        letter-spacing: 0; }
+        /* line 526, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        .more .image-box .block-more h4 a {
+          color: #626262; }
+
+/* line 533, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+blockquote {
+  padding: 0 15px 0 22px;
+  margin: 0 auto 30px;
+  width: 97%; }
+  /* line 537, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  blockquote q {
+    font-style: italic; }
+
+/* line 541, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+strong {
+  font-weight: bold;
+  color: #626262 !important; }
+
+/* line 545, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.coment-box {
+  overflow: hidden; }
+  @media (max-width: 1024px) {
+    /* line 545, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .coment-box {
+      padding: 0 10px; } }
+
+/* line 552, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.comment {
+  width: 100%;
+  padding-bottom: 46px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/* line 559, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.avatar-holder {
+  float: left;
+  width: 10%; }
+
+/* line 563, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.avatar {
+  float: left;
+  margin: 5px 0 0 !important; }
+
+/* line 567, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.commentlist-item {
+  padding: 15px 0 9px; }
+
+/* line 570, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.commentlist-holder {
+  float: right;
+  width: 88%; }
+  @media (max-width: 768px) {
+    /* line 570, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .commentlist-holder {
+      width: 86%; } }
+  @media (max-width: 599px) {
+    /* line 570, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .commentlist-holder {
+      width: 84%; } }
+  @media (max-width: 479px) {
+    /* line 570, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .commentlist-holder {
+      width: 80%; } }
+  @media (max-width: 434px) {
+    /* line 570, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .commentlist-holder {
+      width: 77%; } }
+  @media (max-width: 350px) {
+    /* line 570, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .commentlist-holder {
+      width: 75%; } }
+  /* line 589, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .commentlist-holder p {
+    margin: 0 0 15px !important; }
+
+/* line 593, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.comment-form {
+  margin: 0 auto 33px;
+  overflow: hidden; }
+
+/* line 598, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+#comment {
+  float: right;
+  width: 88%;
+  border-color: #b4ad9e;
+  border-radius: 5px;
+  outline: none;
+  line-height: 17px;
+  padding: 28px 0 27px 33px;
+  font-family: 'ubuntu';
+  overflow: hidden; }
+  @media (max-width: 768px) {
+    /* line 598, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #comment {
+      width: 86%; } }
+  @media (max-width: 599px) {
+    /* line 598, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #comment {
+      width: 84%; } }
+  @media (max-width: 479px) {
+    /* line 598, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #comment {
+      width: 80%; } }
+  @media (max-width: 434px) {
+    /* line 598, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #comment {
+      width: 77%; } }
+  @media (max-width: 350px) {
+    /* line 598, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #comment {
+      width: 75%; } }
+  /* line 625, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #comment:active {
+    border-color: #626262; }
+
+/* line 629, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.reply {
+  text-transform: uppercase;
+  font-family: 'ubuntu';
+  display: inline-block; }
+  /* line 633, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .reply:hover {
+    opacity: .7; }
+
+/* line 637, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.autor {
+  color: #626262 !important;
+  font-weight: bold;
+  padding: 0 0 3px;
+  display: inline-block; }
+  /* line 642, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .autor:hover {
+    opacity: .7; }
+
+/* line 646, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.social-box {
+  float: right; }
+  /* line 649, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .social-box ul li {
+    float: left;
+    font-family: 'ubuntu';
+    text-transform: uppercase;
+    padding-right: 16px; }
+    /* line 655, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-box ul li:first-child {
+      padding-right: 36px; }
+    /* line 658, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-box ul li:last-child {
+      padding-right: 0; }
+    /* line 661, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-box ul li .fa {
+      font-size: 18px; }
+    /* line 664, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-box ul li .fa-facebook-f {
+      color: #626262 !important; }
+    /* line 668, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .social-box ul li:hover a {
+      color: #000 !important; }
+
+/* line 674, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.new-item {
+  opacity: 0;
+  transform: translateY(25px); }
+
+/* line 678, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.main-holder {
+  padding: 0 0 0 82px;
+  margin: 0 0 118px;
+  overflow: hidden; }
+  @media (max-width: 768px) {
+    /* line 678, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .main-holder {
+      margin: 0 0 40px;
+      padding: 0;
+      display: table;
+      width: 100%;
+      table-layout: fixed; } }
+
+/* line 691, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.content {
+  overflow: hidden; }
+  /* line 693, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .content p {
+    margin: 0 0 70px; }
+    @media (max-width: 768px) {
+      /* line 693, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .content p {
+        margin: 0 0 40px; } }
+  @media (max-width: 768px) {
+    /* line 691, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .content {
+      width: 100%;
+      margin: 0 0 30px; } }
+  /* line 707, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .content img {
+    margin: 0 auto 50px; }
+    @media (max-width: 768px) {
+      /* line 707, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .content img {
+        margin: 0 auto 25px; } }
+
+/* line 715, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.about-me {
+  margin: 0 0 44px;
+  overflow: hidden; }
+  @media (max-width: 1024px) {
+    /* line 715, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .about-me {
+      margin: 0 0 25px; } }
+  /* line 722, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .about-me p {
+    margin: 0 0 20px;
+    font-size: 12px;
+    line-height: 20px; }
+  /* line 727, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .about-me h3 {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400; }
+    /* line 731, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .about-me h3 a {
+      color: #626262 !important; }
+  /* line 736, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .about-me .social-block {
+    float: left;
+    padding: 0 0 24px; }
+    @media (max-width: 768px) {
+      /* line 736, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .about-me .social-block {
+        float: right; } }
+    @media (max-width: 479px) {
+      /* line 736, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .about-me .social-block {
+        display: inline-block;
+        text-align: center;
+        float: none; } }
+    /* line 749, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    .about-me .social-block ul li {
+      list-style: none !important;
+      float: left;
+      font-size: 19px !important;
+      line-height: 1px !important;
+      padding: 0 15px 0 0 !important; }
+      /* line 756, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      .about-me .social-block ul li:hover a {
+        color: #000 !important; }
+
+/* line 763, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+.top-post {
+  padding: 0 0 0 5px; }
+
+/* line 766, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+#aside {
+  padding: 6px 0 0 36px;
+  width: 32%;
+  float: right; }
+  @media (max-width: 768px) {
+    /* line 766, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #aside {
+      overflow: hidden;
+      margin: 0 0 40px;
+      float: none;
+      width: 100%;
+      padding: 0; } }
+  @media (max-width: 560px) {
+    /* line 766, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #aside {
+      text-align: center; } }
+  /* line 782, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #aside img {
+    margin: 0 0 19px 5px; }
+    @media (max-width: 768px) {
+      /* line 782, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #aside img {
+        float: left;
+        margin: 0 20px 30px 0; } }
+    @media (max-width: 560px) {
+      /* line 782, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #aside img {
+        float: none; } }
+  /* line 793, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #aside .post-link {
+    padding: 10px 0 0;
+    margin: 0 0 30px; }
+    @media (max-width: 768px) {
+      /* line 793, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #aside .post-link {
+        display: inline-block;
+        width: 40%; } }
+    @media (max-width: 560px) {
+      /* line 793, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #aside .post-link {
+        display: block;
+        width: 100%; } }
+    /* line 804, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #aside .post-link li {
+      padding: 0 0 7px 28px;
+      font-size: 16px;
+      line-height: 19px;
+      position: relative; }
+      @media (max-width: 479px) {
+        /* line 804, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        #aside .post-link li {
+          padding: 0 0 7px; } }
+      /* line 814, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #aside .post-link li:before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        top: 9px;
+        left: 0;
+        background: #b4ad9e;
+        border-radius: 100%; }
+        @media (max-width: 560px) {
+          /* line 814, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+          #aside .post-link li:before {
+            display: none; } }
+      /* line 829, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #aside .post-link li a {
+        color: #626262; }
+    /* line 833, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+    #aside .post-link .link-post {
+      display: block;
+      padding: 17px 0 24px;
+      font-size: 12px;
+      line-height: 14px; }
+      @media (max-width: 768px) {
+        /* line 833, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+        #aside .post-link .link-post {
+          padding: 0 8px 18px; } }
+      /* line 842, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #aside .post-link .link-post a {
+        color: #b4ad9e; }
+  /* line 848, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  #aside .banner {
+    margin: 0; }
+    @media (max-width: 768px) {
+      /* line 848, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #aside .banner {
+        float: right;
+        margin: 0 !important; } }
+    @media (max-width: 560px) {
+      /* line 848, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+      #aside .banner {
+        float: none; } }
+
+@media (max-width: 768px) {
+  /* line 859, D:/Верстка/Work/Minimo/markup/scss/main.scss */
+  .post-block {
+    padding: 0 10px; } }
+
+/*# sourceMappingURL=main.css.map */

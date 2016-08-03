@@ -1,0 +1,17 @@
+#footer{
+    background: url('../images/bg-slide.jpg');
+    text-align: center;
+    overflow: hidden;
+    color: #919191;
+    font: 13px/15px 'Quicksand', sans-serif;
+    font-style: italic;
+    padding: 39px 0 41px;
+    
+    a{
+        text-decoration: none;
+        color: #919191;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}

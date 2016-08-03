@@ -1,0 +1,295 @@
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pinterest-p:before {
+    content: "\e905";
+}
+.icon-noun_22346_cc:before {
+    content: "\e900";
+}
+.icon-noun_22347_cc:before {
+    content: "\e901";
+}
+.icon-noun_43405_cc:before {
+    content: "\e902";
+}
+.icon-noun_89771_cc:before {
+    content: "\e903";
+}
+.icon-google-plus:before {
+    content: "\ea8b";
+}
+.icon-facebook:before {
+    content: "\ea90";
+}
+.icon-tumblr:before {
+    content: "\eab9";
+}
+
+.icon-pinterest-p,
+.icon-google-plus,
+.icon-facebook,
+.icon-noun_22346_cc,
+.icon-noun_22347_cc,
+.icon-noun_89771_cc,
+.icon-tumblr{
+    color: #fff;
+    font-size: 30px;
+}
+.icon-noun_43405_cc{
+    font-size: 45px;
+    color: #fff;
+}
+#wrapper {
+    color: #524e45;
+  .row{
+    max-width: 1265px;
+    padding: 0 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    @include media('<=tablet'){
+        max-width: 100%;
+        padding: 0;
+    }
+  }
+    .block{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+a{
+    color: #544c3f;
+}
+#main{
+    padding: 0 0 357px;
+    background: #faf7f0;
+    @include media('<tablet'){
+         padding: 0 0 82px;
+    }
+}
+.visual{
+    position: relative;
+    .carousel{
+        position: relative;
+        height: auto;
+    }   
+    .mask{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }    
+   .slideset {
+        width: 100%;
+        float: left;
+    }
+    .slide {
+        position: relative;
+        width: auto;
+        float: left;
+        height: auto;
+    }
+        
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.btn-prev,
+.btn-next{
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background: rgba(201, 104, 66, 0.7);
+    top: 46.5%;
+    z-index: 2;
+    
+    .icon-noun_22346_cc,
+    .icon-noun_22347_cc{
+        color: #fff;
+        font-size: 49px;
+
+        @include media('<tablet'){
+            font-size: 28px;
+        }
+    }
+}
+.btn-prev{
+    left: 0;
+    padding: 7px 10px 0 6px;
+
+    @include media('<tablet'){
+        padding: 7px 10px 0 7px; 
+    }
+}
+.btn-next{
+    right: 0;
+    padding: 7px 6px 0 10px;
+
+    @include media('<tablet'){
+        padding: 7px 7px 0 10px; 
+    }
+}
+.case{
+    position: absolute;
+    bottom: 3px;
+    padding: 17px 0;
+    color: #fff;
+    text-shadow: 1px 1px 4px #000;
+    left: 0;
+    right: 0;
+    background: rgba(201, 104, 66, 0.4);
+    overflow: hidden;
+    max-height: 69px;
+    z-index: 1;
+
+    @include media('<tablet'){
+        padding: 10px 0;
+    }
+    @include media('<=tablet'){
+        text-align: center;
+        padding: 7px 5px;
+    }
+    
+    h3{
+        font: 40px/45px 'museo_sans300';
+        margin: 0;
+
+        @include media('<desktop'){
+            font-size: 38px;
+            line-height: 42px;
+        }
+        @include media ('<tablet'){
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+}
+.text{
+    font: 28px/40px 'museo_sans300';
+    color: #666a67;
+    padding: 64px 0 0;
+    margin: 0 0 32px;
+    @include media('<desktop'){
+         padding: 37px 61px 0;
+         font-size: 23px;
+         line-height: 35px;
+    }
+    @include media('<tablet'){
+        font-size: 17px;
+        line-height: 27px;
+    }
+    @include media ('<phone'){
+        font-size: 14px;
+        line-height: 24px;
+        padding: 30px 40px 0;
+    }
+    
+    p{
+        padding: 0 0 41px;
+        margin: 0;
+    }
+}
+.image-block{
+    letter-spacing: -0.36em;
+    margin: 0 -20px;
+    
+    @include media('<tablet'){
+         padding: 0 59px 0 61px;
+         margin: 0;
+    }
+    @include media ('<phone'){
+        padding: 0 40px;
+    }
+    
+    .box{
+        display: inline-block;
+        letter-spacing: 0;
+        vertical-align: top;
+        width: 33.333%;
+        text-align: center;
+        font: 27px/30px 'museo_sans500';
+        padding: 0 20px;
+
+        @include media('<desktop'){
+            font-size: 20px;
+            line-height: 24px;
+        }
+        @include media('<tablet'){
+            padding: 0;
+            width: 100%;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #000;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    } 
+    .image-box{
+        position: relative;
+        z-index: 1;
+        margin: 0 0 33px;
+
+        @include media ('<tablet'){
+            margin: 0 auto 35px;
+            max-width: 351px;
+        }
+        img{
+            border: 14px solid #fff;
+            vertical-align: top;
+            position: relative;
+            z-index: 2; 
+            @include media ('<tablet'){
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 10px;
+            width: 45%;
+            height: 24%;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+            transform: rotate(-3deg);
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            right: 11px;
+            width: 46%;
+            height: 89%;
+            box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.7);
+            transform: rotate(3deg);
+        }
+    }
+}

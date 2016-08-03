@@ -1,0 +1,305 @@
+#header{
+    position: relative;
+}
+.header{
+	background: url('../images/bg-header.jpg');
+    border-bottom: 6px solid #e1f0e5;
+    background-position: center;
+    
+    @include media ('<tablet'){
+        border-top: 6px solid #f05125;
+    }
+}
+.navigate{
+    padding: 33px 0 29px;
+    @include media('<tablet'){
+        padding: 0;
+    }
+    &:after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+    .chat{
+        font: 15px/18px 'museo_sans500';
+        float: right;
+        display: none;
+        padding: 8px 54px 0 0;
+
+        @include media ('<tablet'){
+            display: inline-block;
+            font-size: 14px;
+            padding: 20px 40px 0 0;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover{
+                opacity: .7;
+            }
+
+            .fa{
+                font-size: 25px;
+                padding: 0 3px 0 0;
+
+                @include media('<phone'){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+.nav-active #nav{
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    transition: opacity 0.3s linear 0s;
+}
+#nav{
+    float: left;
+    font: 14px/18px 'museo_sans500';
+    transition: opacity 0.3s linear 0s;
+    
+    
+
+    @include media('<tablet'){
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        padding: 0px;
+        background: #514c42;
+        position: absolute;
+        top: 113%;
+        left: 0;
+        right: 0;
+        z-index: 3;
+    }
+    ul{
+        overflow: hidden;
+
+        @include media('<=920px'){
+            padding: 15px 10px;
+        }
+
+        @include media('<tablet'){
+            display: block;
+            text-align: center;
+            list-style: none;
+            padding: 4px 75px 0;
+        }    
+
+        .active{
+            opacity: .7;
+        }
+        li{
+            float: left;
+            padding: 0 0 0 44px;
+            text-transform: uppercase;
+            @include media('<desktop'){
+                padding: 0 0 0 15px;    
+            }
+
+            @include media('<tablet'){
+                border-top: 1px dotted #8f8d88;
+                padding: 24px 0;
+            }
+            
+            &:first-child{
+                padding: 0;
+                border: none;
+
+                @include media('<tablet'){
+                    padding: 24px 0;
+                }
+            }
+            &:nth-child(6){
+                padding: 0 0 0 140px;
+
+                @include media('<desktop'){
+                    padding: 0 0 0 15px;
+                }
+                
+                @include media('<tablet'){
+                    padding: 24px 0;
+                }
+            }
+
+            @include media('<tablet'){
+                display: block;
+                padding: 24px 0;
+                float: none;
+                
+            } 
+            a{
+                transition: all 0.2s ease;
+                color: #fed9b0;
+                text-decoration: none;
+
+                &:hover{
+                    opacity: .7;
+                    @include media('<tablet'){
+                        color: #f3744a;
+                    }
+                }
+                @include media('<tablet'){
+                    color: #abaaa6;
+                }
+            }
+        }
+    }
+}
+.nav-bar {
+    overflow: hidden;
+    transition: opacity 0.3s linear 0s;
+    
+    @include media('<tablet'){
+        overflow: visible;
+        display: inline-block;
+    }
+    .nav-opener{
+        display: none;
+        float: right;
+
+        @include media('<tablet'){
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .open{
+            display: inline-block;
+            padding: 22px 0;
+            font: 16px/20px 'museo_sans500';
+            text-transform: uppercase;
+
+            @include media('<tablet'){
+                font-size: 14px;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+                &:hover{
+                    opacity: .7;
+                }
+            }
+        }
+    }
+    .opener{
+        width: 68px;
+        height: 39px;
+        position: relative;
+        border-radius: 3px;
+        text-indent: -9999px;
+        overflow: hidden;
+        margin: 14px 0;
+        
+        
+        span{
+            background: #f05125;
+            position: absolute;
+            top: 11px;
+            left: 25%;
+            right: 25%;
+            height: 7px;
+            transition: all 0.2s linear;
+        }
+        &:before {
+            content: '';
+            top: 0;
+            background: #f05125;
+            position: absolute;
+            left: 25%;
+            right: 25%;
+            height: 7px;
+            transition: all 0.2s linear;
+        }
+        &:after {
+            content: '';
+            top: 22px;
+            background: #f05125;
+            position: absolute;
+            left: 25%;
+            right: 25%;
+            height: 7px;
+            transition: all 0.2s linear;
+        }
+
+        @include media('<tablet'){
+            display: block;
+            float: left;
+        }
+        .material-icons{
+            font-size: 35px;
+        }
+    }
+}
+.close-btn span, .nav-active .opener span {
+  opacity: 0;
+}
+.opener:hover {
+  opacity: .9;
+}
+
+.close-btn {
+  &:after, &:before {
+    transform: rotate(45deg);
+    top: 16px;
+    left: 15%;
+    right: 15%;
+  }
+}
+
+.nav-active .opener {
+  &:after, &:before {
+    transform: rotate(45deg);
+    top: 16px;
+    left: 15%;
+    right: 15%;
+  }
+}
+
+.close-btn:after, .nav-active .opener:after {
+  transform: rotate(-45deg);
+}
+.title{
+    padding: 38px 0 0;
+    margin: 0 0 32px;
+    text-align: center;
+    background: #fff;
+
+    @include media('<desktop'){
+        padding: 15px 0 0;
+    }
+    
+    .block{
+        border-radius: 100%;
+        box-shadow: 0px 11px 7px -4px rgba(240, 240, 240, 0.6);
+        h1{
+            font: 48px/52px 'museo_sans700';
+            display: inline-block;
+            margin: 0 0 32px;
+            
+            @include media('<desktop'){
+                margin: 0 0 14px;
+            }
+
+            @include media('<tablet'){
+                font: 31px/34px "museo_sans500";
+            }
+            
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #f05125;
+                
+                @include media('<tablet'){
+                    color: #000;
+                }
+
+                &:hover{
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}

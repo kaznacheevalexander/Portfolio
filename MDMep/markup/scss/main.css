@@ -1,0 +1,2093 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 78, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 99, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 119, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 163, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 170, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 174, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 368, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 422, D:/Верстка/Proj/markup/scss/vendors/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* line 10, D:/Верстка/Proj/markup/scss/base/_helpers.scss */
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* line 54, D:/Верстка/Proj/markup/scss/base/_helpers.scss */
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+/* line 1, D:/Верстка/Proj/markup/scss/base/_reset.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 4, D:/Верстка/Proj/markup/scss/base/_reset.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 8, D:/Верстка/Proj/markup/scss/base/_reset.scss */
+* {
+  max-height: 1000000px; }
+
+/* line 10, D:/Верстка/Proj/markup/scss/base/_reset.scss */
+body {
+  color: #333;
+  background: #fff;
+  font: 16px/1.2 "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 20, D:/Верстка/Proj/markup/scss/base/_reset.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 26, D:/Верстка/Proj/markup/scss/base/_reset.scss */
+.gm-style img {
+  max-width: none; }
+
+/* line 9, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: inherit;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+  color: inherit; }
+
+/* line 16, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+h1, .h1 {
+  font-size: 30px; }
+
+/* line 20, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+h2, .h2 {
+  font-size: 27px; }
+
+/* line 24, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+h3, .h3 {
+  font-size: 24px; }
+
+/* line 28, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+h4, .h4 {
+  font-size: 21px; }
+
+/* line 32, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+h5, .h5 {
+  font-size: 17px; }
+
+/* line 36, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+h6, .h6 {
+  font-size: 15px; }
+
+/* line 40, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+p {
+  margin: 0 0 1em; }
+
+/* line 44, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+a {
+  color: #39f; }
+  /* line 47, D:/Верстка/Proj/markup/scss/base/_typography.scss */
+  a:hover,
+  a:focus {
+    text-decoration: none; }
+
+/* line 4, D:/Верстка/Proj/markup/scss/base/_forms.scss */
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none; }
+
+/* line 17, D:/Верстка/Proj/markup/scss/base/_forms.scss */
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  padding: 0.4em 0.7em; }
+  /* line 28, D:/Верстка/Proj/markup/scss/base/_forms.scss */
+  input[type='text']:focus,
+  input[type='tel']:focus,
+  input[type='email']:focus,
+  input[type='search']:focus,
+  input[type='password']:focus,
+  textarea:focus {
+    border-color: #333; }
+  /* line 243, D:/Верстка/Proj/markup/scss/base/_mixins.scss */
+  input[type='text']::-webkit-input-placeholder,
+  input[type='tel']::-webkit-input-placeholder,
+  input[type='email']::-webkit-input-placeholder,
+  input[type='search']::-webkit-input-placeholder,
+  input[type='password']::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #999; }
+  /* line 244, D:/Верстка/Proj/markup/scss/base/_mixins.scss */
+  input[type='text']::-moz-placeholder,
+  input[type='tel']::-moz-placeholder,
+  input[type='email']::-moz-placeholder,
+  input[type='search']::-moz-placeholder,
+  input[type='password']::-moz-placeholder,
+  textarea::-moz-placeholder {
+    opacity: 1;
+    color: #999; }
+  /* line 245, D:/Верстка/Proj/markup/scss/base/_mixins.scss */
+  input[type='text']:-moz-placeholder,
+  input[type='tel']:-moz-placeholder,
+  input[type='email']:-moz-placeholder,
+  input[type='search']:-moz-placeholder,
+  input[type='password']:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: #999; }
+  /* line 246, D:/Верстка/Proj/markup/scss/base/_mixins.scss */
+  input[type='text']:-ms-input-placeholder,
+  input[type='tel']:-ms-input-placeholder,
+  input[type='email']:-ms-input-placeholder,
+  input[type='search']:-ms-input-placeholder,
+  input[type='password']:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #999; }
+  /* line 247, D:/Верстка/Proj/markup/scss/base/_mixins.scss */
+  input[type='text'].placeholder,
+  input[type='tel'].placeholder,
+  input[type='email'].placeholder,
+  input[type='search'].placeholder,
+  input[type='password'].placeholder,
+  textarea.placeholder {
+    color: #999; }
+
+/* line 37, D:/Верстка/Proj/markup/scss/base/_forms.scss */
+select {
+  -webkit-border-radius: 0; }
+
+/* line 41, D:/Верстка/Proj/markup/scss/base/_forms.scss */
+textarea {
+  resize: vertical;
+  vertical-align: top; }
+
+/* line 50, D:/Верстка/Proj/markup/scss/base/_forms.scss */
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  cursor: pointer; }
+
+/* line 1, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+#header {
+  font-family: 'Michroma', sans-serif;
+  background: #000;
+  overflow: hidden;
+  text-align: center;
+  padding: 32px 0 20px;
+  position: relative; }
+  @media (max-width: 768px) {
+    /* line 1, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    #header {
+      padding: 20px 0; } }
+  @media (max-width: 479px) {
+    /* line 1, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    #header {
+      padding: 5px 0 20px; } }
+  /* line 18, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+  #header .logo {
+    float: left; }
+    @media (max-width: 1024px) {
+      /* line 18, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      #header .logo {
+        width: 20%;
+        margin: 16px 12px 0; } }
+    @media (max-width: 796px) {
+      /* line 18, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      #header .logo {
+        margin: 16px 9px 0; } }
+    @media (max-width: 768px) {
+      /* line 18, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      #header .logo {
+        width: 22%;
+        margin: 0 12px; } }
+    @media (max-width: 479px) {
+      /* line 18, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      #header .logo {
+        width: 40%;
+        margin: 3px 11px; } }
+    /* line 37, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    #header .logo img {
+      width: 90%;
+      height: auto; }
+  /* line 42, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+  #header #nav {
+    float: left; }
+    @media (max-width: 1024px) {
+      /* line 42, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      #header #nav {
+        width: 76%; } }
+    @media (max-width: 768px) {
+      /* line 42, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      #header #nav {
+        width: 100%;
+        position: relative; } }
+    @media (max-width: 479px) {
+      /* line 42, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      #header #nav {
+        float: none; } }
+    /* line 57, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    #header #nav .material-icons {
+      color: #fff; }
+    /* line 62, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    #header #nav ul {
+      margin: 0 5px 0 0;
+      text-align: center;
+      list-style: none;
+      float: left; }
+      @media (max-width: 1023px) {
+        /* line 62, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul {
+          margin-left: 20px; } }
+      @media (max-width: 796px) {
+        /* line 62, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul {
+          margin: 0; } }
+      @media (max-width: 768px) {
+        /* line 62, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul {
+          margin: 5px auto 0 16px; } }
+      @media (max-width: 767px) {
+        /* line 62, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul {
+          float: left !important; } }
+      @media (max-width: 704px) {
+        /* line 62, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul {
+          float: none !important; } }
+      @media (max-width: 479px) {
+        /* line 62, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul {
+          display: block;
+          padding: 33px 0 0; } }
+      /* line 91, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      #header #nav ul li {
+        float: left;
+        padding: 0 0 7px;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 9px 0 0;
+        transition: all 0.3s ease; }
+        /* line 99, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul li.active a {
+          color: #bc902e;
+          border-bottom: 1px solid #bc902e;
+          border-top: 1px solid #bc902e; }
+        @media (max-width: 595px) {
+          /* line 91, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+          #header #nav ul li {
+            margin: 0 6px 0 0; } }
+        @media (max-width: 704px) {
+          /* line 91, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+          #header #nav ul li {
+            float: none; } }
+        @media (max-width: 479px) {
+          /* line 91, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+          #header #nav ul li {
+            padding: 3px 0 0;
+            font-size: 14px;
+            line-height: 15px; } }
+        /* line 119, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul li span {
+          font-size: 12px;
+          line-height: 14px;
+          text-transform: none; }
+        /* line 125, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul li:hover {
+          border: none; }
+      /* line 130, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      #header #nav ul a {
+        color: #fff;
+        text-transform: uppercase;
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent; }
+        /* line 137, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul a:hover {
+          color: #bc902e;
+          border-bottom: 1px solid #bc902e;
+          border-top: 1px solid #bc902e; }
+      @media (max-width: 767px) {
+        /* line 62, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+        #header #nav ul {
+          float: none; }
+          /* line 147, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+          #header #nav ul a {
+            color: #fff; } }
+
+/* line 156, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+.nav-opener {
+  color: #fff;
+  display: none; }
+  @media (max-width: 768px) {
+    /* line 156, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    .nav-opener {
+      position: absolute;
+      display: block;
+      top: -22px;
+      right: 10px; } }
+  @media (max-width: 479px) {
+    /* line 156, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    .nav-opener {
+      top: 11px; } }
+  /* line 171, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+  .nav-opener .material-icons {
+    float: right;
+    margin-right: 15px;
+    font-size: 47px;
+    line-height: 10px; }
+    @media (max-width: 479px) {
+      /* line 171, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+      .nav-opener .material-icons {
+        font-size: 35px; } }
+
+/* line 185, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+.slide:after {
+  visibility: hidden;
+  display: block;
+  clear: both;
+  content: "";
+  height: 0; }
+
+@media (max-width: 1023px) {
+  /* line 183, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+  .slide {
+    padding: 8px 0; } }
+
+@media (max-width: 767px) {
+  /* line 183, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+  .slide {
+    text-align: center;
+    float: none !important;
+    width: 100%; } }
+
+@media (min-width: 769px) {
+  /* line 202, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+  .slide.js-slide-hidden {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important; } }
+
+/* line 212, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+.expSearchBox {
+  float: right;
+  margin: 10px 10px 0 0; }
+  @media (max-width: 768px) {
+    /* line 212, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    .expSearchBox {
+      margin: 15px 10px 0 0; } }
+  @media (max-width: 704px) {
+    /* line 212, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    .expSearchBox {
+      width: 100%;
+      float: none; } }
+  @media (max-width: 479px) {
+    /* line 212, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    .expSearchBox {
+      display: inline-block; } }
+
+/* line 228, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+.expSearchFrom {
+  border: 3px solid #fff;
+  border-radius: 20px;
+  background: #000;
+  display: inline-block;
+  height: 31px;
+  position: relative; }
+
+/* line 237, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+input#field {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  height: 25px;
+  width: 0px;
+  vertical-align: top;
+  padding: 0px 12px;
+  transition: width 0.5s;
+  position: relative;
+  z-index: 2;
+  color: #fff; }
+  @media (max-width: 768px) {
+    /* line 237, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    input#field {
+      width: 133px;
+      font-size: 13px;
+      line-height: 14px;
+      padding: 0 14px; } }
+
+/* line 258, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+input#field:focus {
+  width: 133px;
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 14px;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 10px; }
+  @media (max-width: 768px) {
+    /* line 258, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    input#field:focus {
+      margin: 0;
+      padding: 0 14px; } }
+
+/* line 273, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -2px;
+  right: 0px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  z-index: 1; }
+  @media (max-width: 768px) {
+    /* line 273, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    .close {
+      display: none; } }
+
+/* line 288, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+.close span {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 3px;
+  display: block;
+  height: 4px;
+  position: absolute;
+  right: -7px;
+  top: 29px;
+  width: 14px;
+  transition: 0.2s 0.5s ease-in-out;
+  transform: rotate(45deg); }
+  @media (max-width: 768px) {
+    /* line 288, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    .close span {
+      display: none; } }
+
+/* line 307, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+.close span.back {
+  top: 12px;
+  right: 5px;
+  opacity: 0; }
+  @media (max-width: 768px) {
+    /* line 307, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    .close span.back {
+      display: none; } }
+
+/* line 316, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+input#field:focus + .close span {
+  top: 12px;
+  right: 5px; }
+  @media (max-width: 768px) {
+    /* line 316, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    input#field:focus + .close span {
+      display: none; } }
+
+/* line 325, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+input#field:focus + .close span.back {
+  transition: 0.5s 0.7s ease-in-out;
+  transform: rotate(-45deg);
+  opacity: 1; }
+  @media (max-width: 768px) {
+    /* line 325, D:/Верстка/Proj/markup/scss/castom/_header.scss */
+    input#field:focus + .close span.back {
+      display: none; } }
+
+/* line 1, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+#footer {
+  background: #000;
+  color: #fff;
+  font: 15px/21px "Arimo", sans-serif;
+  padding: 39px 55px; }
+  @media (max-width: 767px) {
+    /* line 1, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer {
+      font-size: 13px;
+      line-height: 19px; } }
+  @media (max-width: 479px) {
+    /* line 1, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer {
+      font-size: 11px;
+      line-height: 13px; } }
+  /* line 15, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+  #footer p {
+    overflow: hidden; }
+    @media (max-width: 767px) {
+      /* line 15, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer p {
+        overflow: visible; } }
+  /* line 22, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+  #footer h3 {
+    font-size: 23px;
+    line-height: 24px;
+    color: #daab35;
+    margin: 0 0 25px; }
+    @media (max-width: 767px) {
+      /* line 22, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer h3 {
+        font-size: 21px;
+        line-height: 17px;
+        margin: 0px 0 17px; } }
+    @media (max-width: 479px) {
+      /* line 22, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer h3 {
+        font-size: 14px;
+        line-height: 15px;
+        margin: 0px 0 10px; } }
+  /* line 40, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+  #footer img {
+    float: left;
+    margin: 0 24px 0 0; }
+  /* line 45, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+  #footer .block {
+    overflow: hidden;
+    margin: 0 auto; }
+    @media (max-width: 1024px) {
+      /* line 45, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .block {
+        width: 100%;
+        padding: 39px 20px; } }
+    @media (max-width: 479px) {
+      /* line 45, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .block {
+        overflow: visible;
+        padding: 10px 20px; } }
+    /* line 58, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer .block .about-info {
+      float: left;
+      width: 32%;
+      margin: 0 15px 0 0; }
+      @media (max-width: 767px) {
+        /* line 58, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .block .about-info {
+          display: none; } }
+  /* line 70, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+  #footer #foot-nav {
+    float: left;
+    width: 26%;
+    position: relative;
+    margin-right: 10px; }
+    @media (max-width: 767px) {
+      /* line 70, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer #foot-nav {
+        width: 44%; } }
+    @media (max-width: 479px) {
+      /* line 70, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer #foot-nav {
+        width: 100%;
+        float: none; }
+        /* line 84, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer #foot-nav:before {
+          content: '';
+          position: absolute;
+          bottom: -7px;
+          left: -9999px;
+          right: -9999px;
+          border: 1px solid #283346; } }
+    /* line 93, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer #foot-nav ul {
+      column-count: 2; }
+      /* line 96, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer #foot-nav ul li {
+        padding: 0px 0 18px;
+        line-height: 18px; }
+        @media (max-width: 767px) {
+          /* line 96, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+          #footer #foot-nav ul li {
+            padding: 0 0 15px; } }
+        @media (max-width: 479px) {
+          /* line 96, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+          #footer #foot-nav ul li {
+            font-size: 14px;
+            line-height: 15px;
+            padding: 0 0 5px; } }
+    /* line 113, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer #foot-nav a {
+      color: #fff;
+      transition: all 0.2s ease; }
+      /* line 117, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer #foot-nav a:hover {
+        opacity: .7; }
+  /* line 122, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+  #footer .send {
+    float: right;
+    width: 38%; }
+    @media (max-width: 767px) {
+      /* line 122, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .send {
+        width: 50%; } }
+    @media (max-width: 479px) {
+      /* line 122, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .send {
+        padding: 10px 0;
+        float: none;
+        width: 100%; } }
+    @media (max-width: 1023px) {
+      /* line 135, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .send img {
+        width: 45%; } }
+    @media (max-width: 479px) {
+      /* line 135, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .send img {
+        margin: 1px 12px 0 0; } }
+    /* line 145, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer .send span {
+      font: 18px/19px "Arimo", sans-serif;
+      color: #7f7f7f;
+      margin: 0 0 17px;
+      display: block; }
+      @media (max-width: 767px) {
+        /* line 145, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .send span {
+          font-size: 14px;
+          line-height: 15px;
+          margin: 0 0 10px; } }
+      @media (max-width: 479px) {
+        /* line 145, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .send span {
+          margin: 0 0 7px; } }
+      /* line 161, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .send span a {
+        color: #fff;
+        transition: all 0.2s ease;
+        white-space: nowrap; }
+        /* line 166, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .send span a:hover {
+          border-bottom: 2px solid #daab35; }
+  /* line 172, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+  #footer .subscribe {
+    width: 100%;
+    padding: 1px;
+    background: #2b2b2b;
+    border: 1px solid #4f4f4f;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 0 0 20px; }
+    @media (max-width: 767px) {
+      /* line 172, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .subscribe {
+        margin: 0 0 14px; } }
+    @media (max-width: 479px) {
+      /* line 172, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .subscribe {
+        margin: 0 0 8px; } }
+    /* line 188, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer .subscribe input[type="email"] {
+      background: #2b2b2b;
+      border: none;
+      outline: none;
+      width: 63%;
+      float: left;
+      height: 34px;
+      font-size: 15px;
+      line-height: 16px; }
+      @media (max-width: 767px) {
+        /* line 188, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .subscribe input[type="email"] {
+          height: 30px;
+          font-size: 14px;
+          line-height: 15px; } }
+      @media (max-width: 564px) {
+        /* line 188, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .subscribe input[type="email"] {
+          width: 60%;
+          font-size: 13px;
+          line-height: 14px;
+          padding: 0.4em 0.3em; } }
+      @media (max-width: 479px) {
+        /* line 188, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .subscribe input[type="email"] {
+          height: 22px; } }
+    /* line 214, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer .subscribe input[type="submit"] {
+      background: #832536;
+      text-transform: uppercase;
+      border: none;
+      outline: none;
+      padding: 0 2px;
+      width: 37%;
+      float: right;
+      height: 34px;
+      font: 14px/15px "Arimo", sans-serif;
+      border-radius: 2px;
+      transition: all 0.3s ease; }
+      @media (max-width: 1023px) {
+        /* line 214, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .subscribe input[type="submit"] {
+          font-size: 12px;
+          line-height: 13px; } }
+      @media (max-width: 767px) {
+        /* line 214, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .subscribe input[type="submit"] {
+          height: 30px; } }
+      @media (max-width: 564px) {
+        /* line 214, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .subscribe input[type="submit"] {
+          width: 40%;
+          font-size: 11px;
+          line-height: 12px; } }
+      @media (max-width: 479px) {
+        /* line 214, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .subscribe input[type="submit"] {
+          height: 22px;
+          font-size: 9px;
+          line-height: 10px;
+          padding: 0.4em; } }
+      /* line 249, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .subscribe input[type="submit"]:hover {
+        border: 1px solid red;
+        opacity: .7; }
+  /* line 255, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+  #footer .contacts {
+    font-size: 10px;
+    line-height: 36px;
+    margin: 0 auto;
+    padding: 15px 5px;
+    text-align: center;
+    position: relative; }
+    /* line 263, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer .contacts a {
+      color: #fff;
+      transition: all 0.2s ease; }
+      /* line 267, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .contacts a:hover {
+        opacity: .7; }
+    @media (max-width: 767px) {
+      /* line 255, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .contacts {
+        width: 100%;
+        padding: 15px 5px 25px; } }
+    @media (max-width: 712px) {
+      /* line 255, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .contacts {
+        font-size: 8px;
+        line-height: 18px; } }
+    /* line 281, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer .contacts:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -9999px;
+      right: -9999px;
+      border: 1px solid #283346; }
+    /* line 290, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer .contacts strong {
+      float: left; }
+      @media (max-width: 443px) {
+        /* line 290, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .contacts strong {
+          display: none; } }
+      @media (max-width: 840px) {
+        /* line 290, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .contacts strong {
+          float: none;
+          display: inline-block;
+          vertical-align: top; } }
+    /* line 305, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer .contacts .social {
+      overflow: hidden;
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      margin: 0 5px; }
+      /* line 313, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .contacts .social li {
+        float: left;
+        padding: 0 10px; }
+        /* line 318, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .contacts .social li a {
+          color: #fff;
+          display: block; }
+          /* line 322, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+          #footer .contacts .social li a .fa {
+            font-size: 20px;
+            transition: all 0.2s ease; }
+            /* line 326, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+            #footer .contacts .social li a .fa:hover {
+              opacity: .7; }
+    /* line 334, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+    #footer .contacts .contact {
+      float: right; }
+      @media (max-width: 840px) {
+        /* line 334, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .contacts .contact {
+          float: none;
+          display: inline-block;
+          vertical-align: top;
+          width: 100%; } }
+      @media (max-width: 553px) {
+        /* line 334, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .contacts .contact {
+          bottom: -14px;
+          left: 20%;
+          margin: 0px 0 12px 0; } }
+      /* line 351, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+      #footer .contacts .contact li {
+        float: left;
+        padding-right: 14px; }
+        @media (max-width: 479px) {
+          /* line 351, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+          #footer .contacts .contact li {
+            padding-right: 6px; } }
+        @media (max-width: 840px) {
+          /* line 351, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+          #footer .contacts .contact li {
+            float: none;
+            display: inline-block; } }
+        /* line 365, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+        #footer .contacts .contact li a {
+          color: #fff;
+          transition: all 0.2s ease; }
+          /* line 369, D:/Верстка/Proj/markup/scss/castom/_footer.scss */
+          #footer .contacts .contact li a:hover {
+            opacity: .7; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, D:/Верстка/Proj/markup/scss/castom/_reset.scss */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, D:/Верстка/Proj/markup/scss/castom/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, D:/Верстка/Proj/markup/scss/castom/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 34, D:/Верстка/Proj/markup/scss/castom/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 37, D:/Верстка/Proj/markup/scss/castom/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 41, D:/Верстка/Proj/markup/scss/castom/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, D:/Верстка/Proj/markup/scss/castom/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 49, D:/Верстка/Proj/markup/scss/castom/_reset.scss */
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'helveticaneuecyrroman';
+  src: url("../helveticaneuecyr-roman-webfont.eot");
+  src: url("../helveticaneuecyr-roman-webfont.eot?#iefix") format("embedded-opentype"), url("../helveticaneuecyr-roman-webfont.woff2") format("woff2"), url("../helveticaneuecyr-roman-webfont.woff") format("woff"), url("../helveticaneuecyr-roman-webfont.ttf") format("truetype"), url("../helveticaneuecyr-roman-webfont.svg#helveticaneuecyrroman") format("svg"); }
+
+@font-face {
+  font-family: 'helveticaneuecyrthin';
+  src: url("../fonts/helveticaneuecyr-thin-webfont.eot");
+  src: url("../fonts/helveticaneuecyr-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneuecyr-thin-webfont.woff") format("woff"), url("../fonts/helveticaneuecyr-thin-webfont.ttf") format("truetype"), url("../fonts/helveticaneuecyr-thin-webfont.svg#helveticaneuecyrthin") format("svg"); }
+
+@font-face {
+  font-family: 'helveticaneuecyrbold';
+  src: url("../helveticaneuecyr-bold-webfont.eot");
+  src: url("../helveticaneuecyr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../helveticaneuecyr-bold-webfont.woff2") format("woff2"), url("../helveticaneuecyr-bold-webfont.woff") format("woff"), url("../helveticaneuecyr-bold-webfont.ttf") format("truetype"), url("../helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold") format("svg"); }
+
+@font-face {
+  font-family: 'helveticaneuecyrthin_italic';
+  src: url("../fonts/helveticaneuecyr-thinitalic-webfont.eot");
+  src: url("../fonts/helveticaneuecyr-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneuecyr-thinitalic-webfont.woff") format("woff"), url("../fonts/helveticaneuecyr-thinitalic-webfont.ttf") format("truetype"), url("../fonts/helveticaneuecyr-thinitalic-webfont.svg#helveticaneuecyrthin_italic") format("svg"); }
+
+/* Common site styles */
+/* line 42, D:/Верстка/Proj/markup/scss/main.scss */
+body {
+  color: #333;
+  font: 12px/15px "Arimo", sans-serif;
+  background: #fff; }
+
+/* line 47, D:/Верстка/Proj/markup/scss/main.scss */
+#wrapper {
+  background: #ededed;
+  overflow: hidden; }
+  /* line 50, D:/Верстка/Proj/markup/scss/main.scss */
+  #wrapper .row {
+    max-width: 1174px;
+    margin: 0 auto; }
+  /* line 54, D:/Верстка/Proj/markup/scss/main.scss */
+  #wrapper a {
+    color: #832536; }
+
+/* line 59, D:/Верстка/Proj/markup/scss/main.scss */
+#main {
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+/*------Programs & events (index.html)------*/
+/* line 64, D:/Верстка/Proj/markup/scss/main.scss */
+.content {
+  width: 100%;
+  padding: 22px 0 34px;
+  overflow: hidden; }
+  @media (max-width: 1023px) {
+    /* line 64, D:/Верстка/Proj/markup/scss/main.scss */
+    .content {
+      padding: 22px 5px 34px; } }
+  @media (max-width: 767px) {
+    /* line 64, D:/Верстка/Proj/markup/scss/main.scss */
+    .content {
+      padding: 21px 11px; } }
+
+/* line 77, D:/Верстка/Proj/markup/scss/main.scss */
+#aside {
+  float: left;
+  position: relative;
+  width: 23%;
+  background: #ededed;
+  color: #666;
+  font: 18px/22px "Arimo", sans-serif;
+  padding: 17px 15px 0 13px;
+  border-radius: 3px 3px 0 0; }
+  @media (max-width: 1023px) {
+    /* line 77, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside {
+      font-size: 16px;
+      line-height: 20px; } }
+  @media (max-width: 767px) {
+    /* line 77, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside {
+      float: none;
+      width: 100%;
+      padding: 17px 15px 50px 13px;
+      margin: 0 0 20px;
+      border-radius: 6px;
+      box-shadow: 0px 3px 3px 0px rgba(191, 191, 191, 0.5); } }
+  @media (max-width: 479px) {
+    /* line 77, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside {
+      margin-bottom: 10px;
+      padding: 10px 9px 40px 9px; } }
+  /* line 108, D:/Верстка/Proj/markup/scss/main.scss */
+  #aside .list {
+    color: #666;
+    border-bottom: 1px solid #666; }
+    @media (max-width: 767px) {
+      /* line 108, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .list {
+        text-align: center; } }
+    @media (max-width: 479px) {
+      /* line 108, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .list {
+        font-size: 14px;
+        line-height: 15px; } }
+    /* line 120, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside .list h5 {
+      line-height: 24px;
+      padding: 0 0 15px;
+      font-weight: bold;
+      color: #782030; }
+      @media (max-width: 479px) {
+        /* line 120, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .list h5 {
+          padding: 0 0 5px; } }
+    /* line 131, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside .list ul {
+      padding: 15px 0;
+      border-top: 2px solid #782030; }
+      @media (max-width: 767px) {
+        /* line 131, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .list ul {
+          line-height: 15px;
+          margin: 0 0 13px; } }
+      @media (max-width: 479px) {
+        /* line 131, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .list ul {
+          padding: 5px 0;
+          margin: 0; } }
+      /* line 144, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .list ul li {
+        padding: 0 0 11px;
+        transition: all 0.3s ease; }
+        @media (max-width: 767px) {
+          /* line 144, D:/Верстка/Proj/markup/scss/main.scss */
+          #aside .list ul li {
+            float: none;
+            padding: 4px 10px; } }
+        @media (max-width: 479px) {
+          /* line 144, D:/Верстка/Proj/markup/scss/main.scss */
+          #aside .list ul li {
+            float: none; } }
+        /* line 157, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .list ul li.active a {
+          color: #000;
+          font-weight: bold; }
+        /* line 162, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .list ul li a {
+          color: #666; }
+          /* line 164, D:/Верстка/Proj/markup/scss/main.scss */
+          #aside .list ul li a:hover {
+            opacity: 0.5; }
+  /* line 172, D:/Верстка/Proj/markup/scss/main.scss */
+  #aside .news-list {
+    margin: 19px 0 0;
+    padding: 0 0 23px;
+    font-size: 14px;
+    line-height: 17px;
+    border-bottom: 1px solid #666;
+    overflow: hidden; }
+    @media (max-width: 767px) {
+      /* line 172, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .news-list {
+        margin: 10px 0 0;
+        padding: 0 0 14px;
+        line-height: 15px; } }
+    @media (max-width: 479px) {
+      /* line 172, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .news-list {
+        margin: 5px 0 0;
+        padding: 5px 0;
+        line-height: 13px; } }
+    /* line 193, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside .news-list h5 {
+      color: #000;
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: bold;
+      margin: 0 0 19px; }
+      @media (max-width: 1023px) {
+        /* line 193, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .news-list h5 {
+          font-size: 16px; } }
+      @media (max-width: 767px) {
+        /* line 193, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .news-list h5 {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 15px;
+          line-height: 16px;
+          margin: 0 0 13px; } }
+      @media (max-width: 479px) {
+        /* line 193, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .news-list h5 {
+          font-size: 14px;
+          line-height: 16px;
+          margin: 0px 0 5px; } }
+    /* line 218, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside .news-list img {
+      display: block;
+      margin: 0 auto 15px;
+      width: 75%;
+      height: auto; }
+      @media (max-width: 1023px) {
+        /* line 218, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .news-list img {
+          width: 65%; } }
+      @media (max-width: 767px) {
+        /* line 218, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .news-list img {
+          width: 30%;
+          margin: 0 15px;
+          float: left; } }
+    /* line 236, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside .news-list a {
+      color: #363636;
+      transition: all 0.3s ease; }
+      /* line 240, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .news-list a:hover {
+        opacity: 0.8; }
+    /* line 245, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside .news-list .news {
+      background: #fff;
+      padding: 15px 9px 22px;
+      border-radius: 6px;
+      box-shadow: 0px 3px 0px 0px rgba(191, 191, 191, 0.5); }
+      @media (max-width: 479px) {
+        /* line 245, D:/Верстка/Proj/markup/scss/main.scss */
+        #aside .news-list .news {
+          padding: 15px 9px 15px; } }
+      /* line 255, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .news-list .news img {
+        display: block;
+        margin: 0 auto 15px; }
+        @media (max-width: 767px) {
+          /* line 255, D:/Верстка/Proj/markup/scss/main.scss */
+          #aside .news-list .news img {
+            margin: 0 12px; } }
+  /* line 265, D:/Верстка/Proj/markup/scss/main.scss */
+  #aside .btn {
+    background: #832536;
+    color: #fff;
+    border: none;
+    font: 14px/15px "Michroma", sans-serif;
+    padding: 13px;
+    margin: 15px 0 0;
+    border-radius: 2px;
+    transition: all 0.3s ease; }
+    @media (max-width: 1023px) {
+      /* line 265, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .btn {
+        padding: 5px; } }
+    @media (max-width: 767px) {
+      /* line 265, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .btn {
+        position: absolute;
+        left: 37%;
+        line-height: 15px; } }
+    @media (max-width: 479px) {
+      /* line 265, D:/Верстка/Proj/markup/scss/main.scss */
+      #aside .btn {
+        left: 11%;
+        line-height: 14px;
+        margin: 10px 0 0; } }
+    /* line 291, D:/Верстка/Proj/markup/scss/main.scss */
+    #aside .btn:hover {
+      opacity: 0.9;
+      box-shadow: 4px 4px 0px 0px rgba(191, 191, 191, 0.9); }
+
+/* line 297, D:/Верстка/Proj/markup/scss/main.scss */
+.container {
+  font-family: 'Michroma', sans-serif;
+  border-top: 10px solid #832536;
+  box-shadow: 0px 3px 0px 0px rgba(191, 191, 191, 0.5);
+  border-radius: 4px;
+  width: 76%;
+  float: right;
+  background: #fff;
+  position: relative; }
+  @media (max-width: 767px) {
+    /* line 297, D:/Верстка/Proj/markup/scss/main.scss */
+    .container {
+      float: none;
+      width: 100%; } }
+  /* line 313, D:/Верстка/Proj/markup/scss/main.scss */
+  .container h1 {
+    font-size: 30px;
+    line-height: 31px;
+    position: relative;
+    text-transform: uppercase;
+    color: #832536;
+    top: 28px;
+    z-index: 1; }
+    @media (max-width: 1023px) {
+      /* line 313, D:/Верстка/Proj/markup/scss/main.scss */
+      .container h1 {
+        font-size: 25px;
+        line-height: 30px; } }
+    @media (max-width: 767px) {
+      /* line 313, D:/Верстка/Proj/markup/scss/main.scss */
+      .container h1 {
+        top: 30px;
+        font-size: 23px;
+        line-height: 26px; } }
+    @media (max-width: 479px) {
+      /* line 313, D:/Верстка/Proj/markup/scss/main.scss */
+      .container h1 {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 21px; } }
+    /* line 339, D:/Верстка/Proj/markup/scss/main.scss */
+    .container h1 span {
+      background: #fff;
+      padding: 0 13px;
+      margin: 0 0 0 19px; }
+      @media (max-width: 479px) {
+        /* line 339, D:/Верстка/Proj/markup/scss/main.scss */
+        .container h1 span {
+          margin: 0 0 0 10px;
+          padding: 0 5px; } }
+    /* line 349, D:/Верстка/Proj/markup/scss/main.scss */
+    .container h1:before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      border-top: 1px solid #832536; }
+      @media (max-width: 767px) {
+        /* line 349, D:/Верстка/Proj/markup/scss/main.scss */
+        .container h1:before {
+          top: 16px; } }
+  /* line 363, D:/Верстка/Proj/markup/scss/main.scss */
+  .container .border-block {
+    position: relative; }
+  /* line 367, D:/Верстка/Proj/markup/scss/main.scss */
+  .container .post-list {
+    padding: 27px 32px; }
+    @media (max-width: 479px) {
+      /* line 367, D:/Верстка/Proj/markup/scss/main.scss */
+      .container .post-list {
+        padding: 15px 15px; } }
+    /* line 374, D:/Верстка/Proj/markup/scss/main.scss */
+    .container .post-list span {
+      font-size: 30px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: #daab35; }
+      @media (max-width: 1023px) {
+        /* line 374, D:/Верстка/Proj/markup/scss/main.scss */
+        .container .post-list span {
+          font-size: 21px;
+          line-height: 26px; } }
+      @media (max-width: 479px) {
+        /* line 374, D:/Верстка/Proj/markup/scss/main.scss */
+        .container .post-list span {
+          font-size: 14px;
+          line-height: 15px; } }
+    /* line 390, D:/Верстка/Proj/markup/scss/main.scss */
+    .container .post-list .post {
+      padding: 20px 30px 15px 0;
+      font: 15px/21px "Arimo", sans-serif;
+      border-bottom: 1px solid #c6c6c6; }
+      @media (max-width: 767px) {
+        /* line 390, D:/Верстка/Proj/markup/scss/main.scss */
+        .container .post-list .post {
+          padding: 16px 30px 15px 0;
+          font-size: 14px;
+          line-height: 18px; } }
+      @media (max-width: 479px) {
+        /* line 390, D:/Верстка/Proj/markup/scss/main.scss */
+        .container .post-list .post {
+          padding: 9px 0px 9px 0;
+          font-size: 14px;
+          line-height: 15px; } }
+      /* line 406, D:/Верстка/Proj/markup/scss/main.scss */
+      .container .post-list .post:last-child {
+        border: none; }
+      /* line 410, D:/Верстка/Proj/markup/scss/main.scss */
+      .container .post-list .post h3 {
+        font: 22px/29px "Michroma", sans-serif;
+        font-weight: bold;
+        margin: 0 0 28px; }
+        @media (max-width: 1023px) {
+          /* line 410, D:/Верстка/Proj/markup/scss/main.scss */
+          .container .post-list .post h3 {
+            font-size: 19px;
+            line-height: 24px; } }
+        @media (max-width: 767px) {
+          /* line 410, D:/Верстка/Proj/markup/scss/main.scss */
+          .container .post-list .post h3 {
+            font-size: 18px;
+            line-height: 23px;
+            margin: 0 0 23px; } }
+        @media (max-width: 479px) {
+          /* line 410, D:/Верстка/Proj/markup/scss/main.scss */
+          .container .post-list .post h3 {
+            font-size: 14px;
+            line-height: 16px;
+            margin: 0px 0 5px; } }
+        /* line 431, D:/Верстка/Proj/markup/scss/main.scss */
+        .container .post-list .post h3 a {
+          color: #832536;
+          transition: all 0.3s ease; }
+          /* line 435, D:/Верстка/Proj/markup/scss/main.scss */
+          .container .post-list .post h3 a:hover {
+            opacity: 0.6; }
+      /* line 441, D:/Верстка/Proj/markup/scss/main.scss */
+      .container .post-list .post .datatime {
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: bold;
+        overflow: hidden;
+        margin: 0 0 21px; }
+        @media (max-width: 1023px) {
+          /* line 441, D:/Верстка/Proj/markup/scss/main.scss */
+          .container .post-list .post .datatime {
+            font-size: 15px;
+            line-height: 20px; } }
+        @media (max-width: 767px) {
+          /* line 441, D:/Верстка/Proj/markup/scss/main.scss */
+          .container .post-list .post .datatime {
+            font-size: 14px;
+            line-height: 18px;
+            margin: 0 0 11px; } }
+        @media (max-width: 479px) {
+          /* line 441, D:/Верстка/Proj/markup/scss/main.scss */
+          .container .post-list .post .datatime {
+            font-size: 14px;
+            margin: 0 0 5px; } }
+        /* line 463, D:/Верстка/Proj/markup/scss/main.scss */
+        .container .post-list .post .datatime time, .container .post-list .post .datatime p {
+          float: left;
+          padding-left: 50px;
+          position: relative; }
+          @media (max-width: 1023px) {
+            /* line 463, D:/Верстка/Proj/markup/scss/main.scss */
+            .container .post-list .post .datatime time, .container .post-list .post .datatime p {
+              padding-left: 35px; } }
+          @media (max-width: 479px) {
+            /* line 463, D:/Верстка/Proj/markup/scss/main.scss */
+            .container .post-list .post .datatime time, .container .post-list .post .datatime p {
+              padding: 0 10px 2px 0; } }
+          /* line 476, D:/Верстка/Proj/markup/scss/main.scss */
+          .container .post-list .post .datatime time:before, .container .post-list .post .datatime p:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 2em;
+            height: 1px;
+            background: #c6c6c6;
+            left: 9px;
+            bottom: 12px; }
+            @media (max-width: 1023px) {
+              /* line 476, D:/Верстка/Proj/markup/scss/main.scss */
+              .container .post-list .post .datatime time:before, .container .post-list .post .datatime p:before {
+                width: 1em; } }
+            @media (max-width: 479px) {
+              /* line 476, D:/Верстка/Proj/markup/scss/main.scss */
+              .container .post-list .post .datatime time:before, .container .post-list .post .datatime p:before {
+                display: none; } }
+          /* line 495, D:/Верстка/Proj/markup/scss/main.scss */
+          .container .post-list .post .datatime time:first-child, .container .post-list .post .datatime p:first-child {
+            padding: 0; }
+            @media (max-width: 479px) {
+              /* line 495, D:/Верстка/Proj/markup/scss/main.scss */
+              .container .post-list .post .datatime time:first-child, .container .post-list .post .datatime p:first-child {
+                padding: 0 10px 0 0; } }
+            /* line 502, D:/Верстка/Proj/markup/scss/main.scss */
+            .container .post-list .post .datatime time:first-child:before, .container .post-list .post .datatime p:first-child:before {
+              display: none; }
+
+/*------Contact------*/
+/* line 514, D:/Верстка/Proj/markup/scss/main.scss */
+h1 {
+  font: 30px/30px "Michroma", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  color: #832536;
+  top: 50%;
+  margin: 0 0 20px;
+  z-index: 1; }
+  @media (max-width: 1023px) {
+    /* line 514, D:/Верстка/Proj/markup/scss/main.scss */
+    h1 {
+      font-size: 25px;
+      line-height: 30px; } }
+  @media (max-width: 479px) {
+    /* line 514, D:/Верстка/Proj/markup/scss/main.scss */
+    h1 {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 21px; } }
+  /* line 534, D:/Верстка/Proj/markup/scss/main.scss */
+  h1 span {
+    background: #fff;
+    display: inline-block;
+    padding: 0 13px;
+    margin: 0 0 0 19px; }
+  /* line 541, D:/Верстка/Proj/markup/scss/main.scss */
+  h1:before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-top: 1px solid #832536; }
+
+/* line 551, D:/Верстка/Proj/markup/scss/main.scss */
+.contacts {
+  width: 100%; }
+
+/* line 554, D:/Верстка/Proj/markup/scss/main.scss */
+.two-column {
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  font: 14px/21px "Arimo", sans-serif;
+  margin: 0 auto;
+  letter-spacing: -4px; }
+  @media (max-width: 479px) {
+    /* line 554, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column {
+      font-size: 14px;
+      line-height: 16px; } }
+  /* line 571, D:/Верстка/Proj/markup/scss/main.scss */
+  .two-column .section {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 27px 32px;
+    letter-spacing: 0; }
+    @media (max-width: 767px) {
+      /* line 571, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .section {
+        width: 100%;
+        padding: 27px 13px 27px 32px; } }
+    @media (max-width: 479px) {
+      /* line 571, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .section {
+        padding: 20px 10px; } }
+    /* line 586, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section strong {
+      font-size: 17px;
+      line-height: 18px;
+      font-weight: bold;
+      margin: 0 0 28px;
+      display: inline-block; }
+      @media (max-width: 479px) {
+        /* line 586, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section strong {
+          font-size: 14px;
+          line-height: 16px; } }
+    /* line 600, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section .form-contact {
+      padding: 20px 0;
+      position: relative; }
+    /* line 604, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section .holder {
+      width: 100%;
+      letter-spacing: 0.36em; }
+    /* line 608, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section .area-width {
+      width: 98%;
+      letter-spacing: 0;
+      margin: 0px 0 18px; }
+      @media (max-width: 767px) {
+        /* line 608, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section .area-width {
+          width: 97.5%; } }
+      @media (max-width: 479px) {
+        /* line 608, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section .area-width {
+          width: 98.5%; } }
+    /* line 622, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section .area {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      letter-spacing: 0;
+      margin: 0px 0 18px; }
+      @media (max-width: 479px) {
+        /* line 622, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section .area {
+          margin: 0px 0 10px; } }
+      /* line 633, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .section .area input {
+        padding: 8px;
+        width: 100%;
+        border: 1px solid #832536;
+        outline: none; }
+        @media (max-width: 479px) {
+          /* line 633, D:/Верстка/Proj/markup/scss/main.scss */
+          .two-column .section .area input {
+            padding: 4px; } }
+    /* line 646, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section .input {
+      margin: 0px 0 18px; }
+      @media (max-width: 479px) {
+        /* line 646, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section .input {
+          margin: 0 0 10px; } }
+    /* line 653, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section input[id='address'],
+    .two-column .section input[id='city'] {
+      width: 100%;
+      padding: 8px;
+      border-color: #832536;
+      outline: none; }
+      @media (max-width: 479px) {
+        /* line 653, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section input[id='address'],
+        .two-column .section input[id='city'] {
+          padding: 4px; } }
+    /* line 663, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section .texterea {
+      margin: 0 0 32px; }
+      /* line 666, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .section .texterea .text {
+        min-height: 118px;
+        width: 98%;
+        border-color: #832536;
+        outline: none; }
+        @media (max-width: 767px) {
+          /* line 666, D:/Верстка/Proj/markup/scss/main.scss */
+          .two-column .section .texterea .text {
+            width: 97.5%; } }
+        @media (max-width: 479px) {
+          /* line 666, D:/Верстка/Proj/markup/scss/main.scss */
+          .two-column .section .texterea .text {
+            width: 98.5%; } }
+    /* line 682, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section .titel {
+      font-weight: bold; }
+    /* line 685, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section ul {
+      margin: 20px 0 30px;
+      column-count: 3; }
+      @media (max-width: 570px) {
+        /* line 685, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section ul {
+          column-count: 2; } }
+      @media (max-width: 479px) {
+        /* line 685, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section ul {
+          column-count: 1; } }
+      /* line 697, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .section ul li {
+        font-size: 11px;
+        line-height: 12px;
+        padding: 0 0 12px;
+        overflow: hidden; }
+        @media (max-width: 479px) {
+          /* line 697, D:/Верстка/Proj/markup/scss/main.scss */
+          .two-column .section ul li {
+            font-size: 14px;
+            line-height: 14px; } }
+        /* line 708, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section ul li input[type='checkbox'] {
+          float: left;
+          margin-right: 3px; }
+    /* line 714, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .section input[type='submit'] {
+      margin-left: 7em;
+      font: 16px/16px "Arimo", sans-serif;
+      background: #832536;
+      text-transform: uppercase;
+      color: #fff;
+      border: none;
+      width: 51%;
+      height: 39px;
+      border-radius: 2px;
+      transition: all 0.3s ease; }
+      @media (max-width: 767px) {
+        /* line 714, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section input[type='submit'] {
+          position: absolute;
+          margin: 0;
+          bottom: -4px;
+          left: 27%;
+          width: 40%; } }
+      @media (max-width: 479px) {
+        /* line 714, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .section input[type='submit'] {
+          bottom: 0;
+          font-size: 14px;
+          line-height: 14px;
+          height: 28px; } }
+      /* line 740, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .section input[type='submit']:hover {
+        border: 1px solid red;
+        opacity: .7; }
+  /* line 747, D:/Верстка/Proj/markup/scss/main.scss */
+  .two-column .map {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    letter-spacing: 0;
+    letter-spacing: -4px; }
+    @media (max-width: 1023px) {
+      /* line 747, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .map {
+        padding: 0 0 0 30px; } }
+    @media (max-width: 767px) {
+      /* line 747, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .map {
+        width: 100%;
+        margin: 0 0 25px;
+        padding: 0px 11px;
+        border-top: 1px solid #7f7f7f;
+        border-bottom: 1px solid #7f7f7f; } }
+    /* line 765, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .map .map-img {
+      display: inline-block;
+      letter-spacing: 0;
+      vertical-align: top;
+      padding: 30px 0;
+      width: 94%;
+      border-bottom: 1px solid #7f7f7f; }
+      @media (max-width: 767px) {
+        /* line 765, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .map .map-img {
+          width: 100%;
+          border: none; } }
+      @media (max-width: 479px) {
+        /* line 765, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .map .map-img {
+          margin: 0 5px 0 0; } }
+      /* line 785, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .map .map-img a {
+        letter-spacing: 0; }
+      /* line 788, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .map .map-img img {
+        width: 100%;
+        height: auto; }
+  /* line 794, D:/Верстка/Proj/markup/scss/main.scss */
+  .two-column .address-info {
+    display: inline-block;
+    letter-spacing: 0;
+    vertical-align: top;
+    padding: 22px 0 0;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: bold;
+    overflow: hidden; }
+    @media (max-width: 767px) {
+      /* line 794, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .address-info {
+        padding: 0;
+        width: 100%; } }
+    @media (max-width: 479px) {
+      /* line 794, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .address-info {
+        font-size: 14px;
+        line-height: 15px; } }
+    /* line 814, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .address-info h3 {
+      font: 22px/29px "Michroma", sans-serif;
+      color: #832536; }
+      @media (max-width: 479px) {
+        /* line 814, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .address-info h3 {
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: bold; } }
+    /* line 825, D:/Верстка/Proj/markup/scss/main.scss */
+    .two-column .address-info .address {
+      width: 100%;
+      column-count: 2; }
+      /* line 829, D:/Верстка/Proj/markup/scss/main.scss */
+      .two-column .address-info .address a {
+        color: #2b2b2b !important;
+        transition: all 0.3s ease; }
+        /* line 833, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .address-info .address a:hover {
+          opacity: .7; }
+      @media (max-width: 479px) {
+        /* line 825, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .address-info .address {
+          font-size: 12px;
+          line-height: 15px; } }
+      @media (max-width: 767px) {
+        /* line 843, D:/Верстка/Proj/markup/scss/main.scss */
+        .two-column .address-info .address address {
+          margin: 10px 0px; } }
+
+/*# sourceMappingURL=main.css.map */

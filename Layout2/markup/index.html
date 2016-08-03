@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Layout2</title>
+<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="36x36"  href="images/favicon/android-icon-36x36.png">
+	<link rel="icon" type="image/png" sizes="48x48"  href="images/favicon/android-icon-48x48.png">
+	<link rel="icon" type="image/png" sizes="72x72"  href="images/favicon/android-icon-72x72.png">
+	<link rel="icon" type="image/png" sizes="96x96"  href="images/favicon/android-icon-96x96.png">
+	<link rel="icon" type="image/png" sizes="144x144"  href="images/favicon/android-icon-144x144.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+<!-- include JavaScript -->
+	<script src="js/jquery-1.11.2.min.js" defer></script>
+	<script src="js/bootstrap.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+</head>
+<body>
+<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header">
+			<div class="row">
+				<!-- main navigation of the page -->
+				<nav class="navbar navbar-default navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- page logo -->
+							<a class="navbar-brand" href="#"><img src="images/logo.png" alt="Layout2" class="img-responsive"></a>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Team</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- contain carousel of the page -->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="list-box">
+					<div class="item active" style="background-image: url('images/slide01.jpg')">
+						<div class="carousel-caption">
+							<h1>Lorem ipsum dolor</h1>
+							<p>Aenean id ligula aliquam dolor tristique fringilla</p>
+							<button type="button" class="btn btn-warning" aria-label="Left Align">Start now</button>
+						</div>
+					</div>
+					<div class="item" style="background-image: url('images/slide02.jpg')">
+						<div class="carousel-caption">
+							<h1>Lorem ipsum dolor</h1>
+							<p>Aenean id ligula aliquam dolor tristique fringilla</p>
+							<button type="button" class="btn btn-warning" aria-label="Left Align">Start now</button>
+						</div>
+					</div>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<i class="fa fa-chevron-left" aria-hidden="true"></i>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- contain main about-box of the page -->
+			<div class="container">
+				<div class="row">
+					<div class="about-box">
+						<h2><span class="above-title">Donec tristique rutrum</span>About company</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui non nulla fermentum sollicitudin. Nunc dictum finibus dui, in ornare lectus venenatis eget. Sed mollis tellus auctor lorem congue, in tincidunt leo pharetra. Nulla facilisi. Mauris sed justo consequat, pretium sem in, tempor sapien. Vestibulum maximus leo fermentum risus vehicula, nec blandit risus tincidunt. Nulla elementum congue turpis. Aenean id ligula aliquam dolor tristique fringilla. Aenean vel faucibus leo, ac iaculis sem. Suspendisse in erat id leo ultricies euismod eget et ex. Praesent tempus magna justo, a ultrices sem molestie non. Phasellus id mi quis dolor sollicitudin condimentum. Maecenas blandit leo nulla, a convallis ex laoreet vel. Maecenas iaculis massa placerat leo rutrum, et luctus diam sollicitudin. Cras nisl orci, ullamcorper non nisi eu, ultricies facilisis purus.</p>
+						<p>Suspendisse potenti. Cras cursus ex nulla, ac faucibus leo suscipit in. Nulla maximus pellentesque sapien, et tincidunt nisl malesuada feugiat. Cras ac tortor hendrerit, tristique elit sed, placerat justo. Mauris sit amet malesuada nisl, vel tincidunt eros. Cras eget tempus nibh. Mauris rutrum risus at enim sollicitudin, sed posuere lectus suscipit. Morbi velit felis, viverra et quam ut, tincidunt cursus nisl. Phasellus tincidunt, ex bibendum viverra bibendum, mi nisi ultrices elit, laoreet faucibus massa est a massa.</p>
+						<button type="button" class="btn btn-default" aria-label="Left Align">Read more</button>
+					</div>
+				</div>
+			</div>
+			<!-- contain service-box of the page -->
+			<div class="container-fluid service-box">
+				<div class="container">
+					<div class="row">
+						<h2><span class="above-title">Lorem ipsum</span>Our services</h2>
+						<div class="col-sm-6 col-md-4 block">
+							<div class="icon-box">
+								<i class="fa fa-users" aria-hidden="true"></i>
+							</div>
+							<div class="box">
+								<h3><a href="#">Some Service</a></h3>
+								<p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 block">
+							<div class="icon-box">
+								<i class="fa fa-comments" aria-hidden="true"></i>
+							</div>
+							<div class="box">
+								<h3><a href="#">Some Service</a></h3>
+								<p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 block">
+							<div class="icon-box">
+								<i class="fa fa-trophy" aria-hidden="true"></i>
+							</div>
+							<div class="box">
+								<h3><a href="#">Some Service</a></h3>
+								<p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 block">
+							<div class="icon-box">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="box">
+								<h3><a href="#">Some Service</a></h3>
+								<p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 block">
+							<div class="icon-box">
+								<i class="fa fa-plane" aria-hidden="true"></i>
+							</div>
+							<div class="box">
+								<h3><a href="#">Some Service</a></h3>
+								<p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 block">
+							<div class="icon-box">
+								<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+							</div>
+							<div class="box">
+								<h3><a href="#">Some Service</a></h3>
+								<p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- contain subscribe-box of the page -->
+			<div class="container-fluid subscribe-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 text-left">
+							<span class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+							<p>Cras ac tortor hendrerit, tristique elit sed, placerat justo.</p>
+						</div>
+						<div class="clo-sm-8 col-md-4 text-right">
+							<button type="button" class="btn btn-warning" aria-label="Left Align">Subscribe now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- contain image-box of the page -->
+			<div class="container">
+				<div class="row">
+					<div class="imge-box">
+						<h2><span class="above-title">Morbi rhoncus</span>Our works</h2>
+						<div class="col-xs-6 col-md-4 images">
+							<img src="images/image01.jpg"  alt="image description" class="img-responsive">
+							<div class="info-box">
+								<a href="#" class="ico"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+								<div class="info">
+									<span class="title">Ut pretium leo vel</span>
+									<p>Category</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-4 images">
+							<img src="images/image02.jpg" alt="image description" class="img-responsive">
+							<div class="info-box">
+								<a href="#" class="ico"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+								<div class="info">
+									<span class="title">Ut pretium leo vel</span>
+									<p>Category</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-4 images">
+							<img src="images/image03.jpg" alt="image description" class="img-responsive">
+							<div class="info-box">
+								<a href="#" class="ico"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+								<div class="info">
+									<span class="title">Ut pretium leo vel</span>
+									<p>Category</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-4 images">
+							<img src="images/image04.jpg" alt="image description" class="img-responsive">
+							<div class="info-box">
+								<a href="#" class="ico"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+								<div class="info">
+									<span class="title">Ut pretium leo vel</span>
+									<p>Category</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-4 images">
+							<img src="images/image05.jpg" alt="image description" class="img-responsive">
+							<div class="info-box">
+								<a href="#" class="ico"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+								<div class="info">
+									<span class="title">Ut pretium leo vel</span>
+									<p>Category</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-4 images">
+							<img src="images/image06.jpg"  alt="image description" class="img-responsive">
+							<div class="info-box">
+								<a href="#" class="ico"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+								<div class="info">
+									<span class="title">Ut pretium leo vel</span>
+									<p>Category</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- contain address-block of the page -->
+			<div class="container-fluid addres-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-md-3 contact-list-title">
+							<h2><span class="above-title">Tristique</span>Contact</h2>
+						</div>
+						<div class="col-sm-6 col-md-3 contact-list">
+							<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+							<div class="address-info">
+								<address>2619 Old Fort Rd<br>Fort Washington, PA 19034</address>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 contact-list">
+							<div  class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="phone">
+								<a href="tel:610-516-0418">610-516-0418</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 contact-list">
+							<div  class="icon"><i class="fa fa-at" aria-hidden="true"></i></div>
+							<div class="email">
+								<a href="mailto:&#108;&#097;&#121;&#111;&#117;&#116;&#046;&#048;&#050;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">layout.02@gmail.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- contain map-marker of the page -->
+			<div class="container-fluid map-marker">
+				<div class="row">
+					<map name="planetmap"><img src="images/map.jpg" alt="image description" class="img-responsive"></map>
+				</div>
+			</div>
+			<!-- contain back to top of the page -->
+			<div class="back-to-top"><a href="#wrapper"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
+		</main>
+		<!-- footer of the page -->
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<!-- contain copyright of the page -->
+					<div class="col-md-4 text-left">
+						<p>Copyright 2016 &copy; <a href="#">Layout.02</a></p>
+					</div>
+					<!-- contain social-links of the page -->
+					<div class="col-md-4 text-center">
+						<ul class="list-inline footer-icon">
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<!-- contain info-links of the page -->
+					<div class="col-md-4 text-right">
+						<ul class="list-inline footer-nav">
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
